@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workflow on Karl-Johan Warenius</title>
+    <link>http://localhost:1313/tags/workflow/</link>
+    <description>Recent content in Workflow on Karl-Johan Warenius</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Jan 2024 16:45:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/workflow/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Workflow Zen: Finding Peace in Version Control</title>
+      <link>http://localhost:1313/posts/git-workflow-zen/</link>
+      <pubDate>Sat, 20 Jan 2024 16:45:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/git-workflow-zen/</guid>
+      <description>&lt;p&gt;Version control doesn&amp;rsquo;t have to be stressful. Like a well-organized workspace or a perfectly brewed cup of coffee, a thoughtful Git workflow can bring calm and clarity to your development process. Let&amp;rsquo;s explore how to find zen in your version control practices.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-philosophy-of-clean-commits&#34;&gt;The Philosophy of Clean Commits&lt;/h2&gt;&#xA;&lt;p&gt;Think of each commit as a small gift to your future self and your teammates. A good commit tells a story, explains the &amp;ldquo;why&amp;rdquo; behind the change, and makes the codebase easier to understand.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

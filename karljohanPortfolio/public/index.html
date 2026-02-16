@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en-us" data-theme="light">
+<head>
+	<meta name="generator" content="Hugo 0.155.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>
+  Karl-Johan Warenius - Portfolio site
+</title>
+
+
+
+<meta name="description" content="A cozy example site showcasing the LofiCode Hugo theme" />
+
+
+
+<meta
+  property="og:title"
+  content="Karl-Johan Warenius"
+/>
+<meta
+  property="og:description"
+  content="A cozy example site showcasing the LofiCode Hugo theme"
+/>
+<meta
+  property="og:type"
+  content="website"
+/>
+<meta property="og:url" content="http://localhost:1313/" />
+<meta property="og:site_name" content="Karl-Johan Warenius" />
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta
+  name="twitter:title"
+  content="Karl-Johan Warenius"
+/>
+<meta
+  name="twitter:description"
+  content="A cozy example site showcasing the LofiCode Hugo theme"
+/>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap"
+  rel="stylesheet"
+/>
+
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+
+<link rel="stylesheet" href="http://localhost:1313/css/style.css">
+
+
+<link
+  rel="alternate"
+  type="application/json"
+  href="http://localhost:1313/index.json"
+/>
+<link
+  rel="alternate"
+  type="application/json"
+  href="http://localhost:1313/pages.json"
+/>
+
+</head>
+<body>
+    
+
+    
+    <header class="site-header">
+    <nav>
+        <div class="nav-left">
+            <a href="http://localhost:1313/" class="logo">Karl-Johan Warenius</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <a href="http://localhost:1313/about/" class="nav-link">About</a>
+            
+            <a href="http://localhost:1313/contact/" class="nav-link">Contact</a>
+            
+        </div>
+
+        <div class="header-controls">
+            <button class="search-toggle" title="Search posts">🔍</button>
+            <button class="theme-toggle" title="Toggle dark mode">🌙</button>
+        </div>
+    </nav>
+
+    
+    <div class="search-form-container" id="searchForm">
+        <div class="search-form">
+            <div class="search-input-wrapper">
+                <input type="text" id="searchInput" placeholder="Search posts..." autocomplete="off">
+                <button class="search-submit" type="button">
+                    <span>🔍</span>
+                </button>
+                <button class="search-close" type="button">
+                    <span>✕</span>
+                </button>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+</header>
+
+    
+
+    <main>
+        
+<div class="container">
+  <div class="author-profile-section">
+    <div class="profile-photo-container">
+      <img
+        src="http://localhost:1313/images/profile.png"
+        alt="Karl-Johan Dev"
+        class="profile-photo"
+      />
+    </div>
+    <p class="profile-tagline">Portfolio site</p>
+    <div class="social-links">
+       
+      <a
+        href="https://github.com/example"
+        target="_blank"
+        rel="noopener"
+        class="social-link"
+        title="GitHub"
+      >
+        <i class="fab fa-github social-icon"></i>
+      </a>
+        
+      <a
+        href="https://twitter.com/example"
+        target="_blank"
+        rel="noopener"
+        class="social-link"
+        title="X (formerly Twitter)"
+      >
+        <span class="social-icon x-icon">𝕏</span>
+      </a>
+       
+    </div>
+  </div>
+
+  <div class="filter-section">
+    <div class="filter-tags">
+      <div class="tag active">All</div>
+      
+      <div class="tag" data-tag="productivity">productivity</div>
+      
+      <div class="tag" data-tag="best-practices">best-practices</div>
+      
+      <div class="tag" data-tag="coffee">coffee</div>
+      
+      <div class="tag" data-tag="collaboration">collaboration</div>
+      
+      <div class="tag" data-tag="cozy">cozy</div>
+      
+      <div class="tag" data-tag="debugging">debugging</div>
+      
+      <div class="tag" data-tag="design">design</div>
+      
+      <div class="tag" data-tag="development">development</div>
+      
+      <div class="tag" data-tag="focus">focus</div>
+      
+      <div class="tag" data-tag="git">git</div>
+      
+      <div class="tag" data-tag="hugo">hugo</div>
+      
+      <div class="tag" data-tag="javascript">javascript</div>
+      
+      <div class="tag" data-tag="lifestyle">lifestyle</div>
+      
+      <div class="tag" data-tag="lofi">lofi</div>
+      
+      <div class="tag" data-tag="theme">theme</div>
+      
+      <div class="tag" data-tag="tips">tips</div>
+      
+      <div class="tag" data-tag="wellness">wellness</div>
+      
+      <div class="tag" data-tag="workflow">workflow</div>
+      
+      <div class="tag" data-tag="workspace">workspace</div>
+      
+    </div>
+  </div>
+
+  <div class="posts-list" id="posts-container">
+       
+<article class="post-item featured">
+  <div class="post-content">
+    <div class="post-header-inline">
+      <h2 class="post-title-vaporwave">
+        <a href="http://localhost:1313/posts/welcome-to-loficode/">Welcome to LofiCode Theme</a>
+      </h2>
+    </div>
+
+    <div class="post-date-with-badges">
+      <span class="post-date">2025.01.01</span>
+      
+      <span class="featured-badge">✨ Featured</span>
+       
+      <span class="post-mood">cozy</span>
+      
+    </div>
+
+    
+    <p class="post-list-subtitle">A cozy Hugo theme for developers and creatives</p>
+    
+
+    <p class="post-excerpt-vaporwave">
+      Welcome to the LofiCode Hugo theme! This theme is designed for developers and creatives who want to create a warm, inviting blog with a retro lo-fi aesthetic. …
+    </p>
+
+    
+    <div class="post-tags-vaporwave">
+      
+      <span class="post-tag-vaporwave">hugo</span>
+      
+      <span class="post-tag-vaporwave">theme</span>
+      
+      <span class="post-tag-vaporwave">lofi</span>
+      
+      <span class="post-tag-vaporwave">cozy</span>
+      
+    </div>
+    
+
+    <a href="http://localhost:1313/posts/welcome-to-loficode/" class="continue-reading-vaporwave">
+      Read More →
+    </a>
+  </div>
+
+  <div class="post-meta-sidebar">
+    <div class="reading-time-vaporwave">
+      <span class="coffee-cups">
+                 ☕☕
+      </span>
+      <span>2 min</span>
+    </div>
+  </div>
+</article>
+  
+<article class="post-item">
+  <div class="post-content">
+    <div class="post-header-inline">
+      <h2 class="post-title-vaporwave">
+        <a href="http://localhost:1313/posts/git-workflow-zen/">Git Workflow Zen: Finding Peace in Version Control</a>
+      </h2>
+    </div>
+
+    <div class="post-date-with-badges">
+      <span class="post-date">2024.01.20</span>
+       
+      <span class="post-mood">Contemplative</span>
+      
+    </div>
+
+    
+    <p class="post-list-subtitle">Mindful practices for cleaner commits and happier collaborations</p>
+    
+
+    <p class="post-excerpt-vaporwave">
+      Version control doesn&rsquo;t have to be stressful. Like a well-organized workspace or a perfectly brewed cup of coffee, a thoughtful Git workflow can bring …
+    </p>
+
+    
+    <div class="post-tags-vaporwave">
+      
+      <span class="post-tag-vaporwave">git</span>
+      
+      <span class="post-tag-vaporwave">workflow</span>
+      
+      <span class="post-tag-vaporwave">collaboration</span>
+      
+      <span class="post-tag-vaporwave">best-practices</span>
+      
+    </div>
+    
+
+    <a href="http://localhost:1313/posts/git-workflow-zen/" class="continue-reading-vaporwave">
+      Read More →
+    </a>
+  </div>
+
+  <div class="post-meta-sidebar">
+    <div class="reading-time-vaporwave">
+      <span class="coffee-cups">
+                         ☕☕☕☕☕
+      </span>
+      <span>7 min</span>
+    </div>
+  </div>
+</article>
+  
+<article class="post-item featured">
+  <div class="post-content">
+    <div class="post-header-inline">
+      <h2 class="post-title-vaporwave">
+        <a href="http://localhost:1313/posts/building-cozy-workspaces/">Building Cozy Digital Workspaces</a>
+      </h2>
+    </div>
+
+    <div class="post-date-with-badges">
+      <span class="post-date">2024.01.15</span>
+      
+      <span class="featured-badge">✨ Featured</span>
+       
+      <span class="post-mood">Focused</span>
+      
+    </div>
+
+    
+    <p class="post-list-subtitle">Creating environments that spark creativity and reduce stress</p>
+    
+
+    <p class="post-excerpt-vaporwave">
+      In our fast-paced digital world, creating a cozy workspace isn&rsquo;t just about aesthetics—it&rsquo;s about crafting an environment that nurtures creativity, …
+    </p>
+
+    
+    <div class="post-tags-vaporwave">
+      
+      <span class="post-tag-vaporwave">productivity</span>
+      
+      <span class="post-tag-vaporwave">workspace</span>
+      
+      <span class="post-tag-vaporwave">design</span>
+      
+      <span class="post-tag-vaporwave">wellness</span>
+      
+    </div>
+    
+
+    <a href="http://localhost:1313/posts/building-cozy-workspaces/" class="continue-reading-vaporwave">
+      Read More →
+    </a>
+  </div>
+
+  <div class="post-meta-sidebar">
+    <div class="reading-time-vaporwave">
+      <span class="coffee-cups">
+                   ☕☕☕
+      </span>
+      <span>3 min</span>
+    </div>
+  </div>
+</article>
+ 
+  </div>
+
+   
+  <div class="load-more-section">
+    <button
+      id="load-more-btn"
+      class="load-more-btn"
+      data-loaded="3"
+      data-total="5"
+    >
+      <span class="load-more-text">Load More Posts</span>
+      <span class="load-more-icon">☕</span>
+    </button>
+    <div class="load-more-loading" id="load-more-loading" style="display: none">
+      <span class="loading-text">Brewing more content...</span>
+      <div class="loading-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+    </main>
+
+    
+    <div class="ambient-bar">
+    <div class="ambient-controls">
+        <button class="mute-toggle muted" title="Toggle ambient sounds">
+            <i class="fas fa-volume-mute"></i>
+        </button>
+        <button class="ambient-icon" data-sound="coffee" title="Coffee Shop Ambience">
+            <i class="fas fa-coffee"></i>
+        </button>
+        <button class="ambient-icon" data-sound="rain" title="Gentle Rain">
+            <i class="fas fa-cloud-rain"></i>
+        </button>
+        <button class="ambient-icon" data-sound="fireplace" title="Crackling Fireplace">
+            <i class="fas fa-fire"></i>
+        </button>
+    </div>
+
+    <div class="ambient-label">Click to start ambient sounds</div>
+
+    <div class="volume-container">
+        <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="">
+        <div class="equalizer muted">
+            
+            <div class="equalizer-bar"></div>
+            
+            <div class="equalizer-bar"></div>
+            
+            <div class="equalizer-bar"></div>
+            
+            <div class="equalizer-bar"></div>
+            
+            <div class="equalizer-bar"></div>
+            
+            <div class="equalizer-bar"></div>
+            
+            <div class="equalizer-bar"></div>
+            
+            <div class="equalizer-bar"></div>
+            
+        </div>
+    </div>
+</div>
+
+    
+
+    <script src="http://localhost:1313/js/main.js"></script>
+</body>
+</html>
