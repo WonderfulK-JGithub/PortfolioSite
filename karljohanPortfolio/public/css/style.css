@@ -204,7 +204,7 @@ nav {
 
 .logo {
     font-family: 'Orbitron', monospace;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     background: var(--btn-gradient);
     -webkit-background-clip: text;

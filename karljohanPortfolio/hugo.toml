@@ -30,7 +30,7 @@ enableEmoji = true
 
 [params]
   description = "A cozy example site showcasing the LofiCode Hugo theme"
-  tagline = "Portfolio site"
+  tagline = "UI and Tools programmer"
 
   # Profile section
   [params.author]
