@@ -6,15 +6,8 @@
     <description>Recent content in Tags on Karl-Johan Warenius</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Feb 2026 10:52:19 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jan 2025 10:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Game Project</title>
-      <link>http://localhost:1313/tags/game-project/</link>
-      <pubDate>Mon, 16 Feb 2026 10:52:19 +0100</pubDate>
-      <guid>http://localhost:1313/tags/game-project/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Cozy</title>
       <link>http://localhost:1313/tags/cozy/</link>
@@ -44,108 +37,24 @@
       <description></description>
     </item>
     <item>
-      <title>Best-Practices</title>
-      <link>http://localhost:1313/tags/best-practices/</link>
-      <pubDate>Sat, 20 Jan 2024 16:45:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/best-practices/</guid>
+      <title>Game Project</title>
+      <link>http://localhost:1313/tags/game-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/game-project/</guid>
       <description></description>
     </item>
     <item>
-      <title>Collaboration</title>
-      <link>http://localhost:1313/tags/collaboration/</link>
-      <pubDate>Sat, 20 Jan 2024 16:45:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/collaboration/</guid>
+      <title>GameProject</title>
+      <link>http://localhost:1313/tags/gameproject/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/gameproject/</guid>
       <description></description>
     </item>
     <item>
-      <title>Git</title>
-      <link>http://localhost:1313/tags/git/</link>
-      <pubDate>Sat, 20 Jan 2024 16:45:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/git/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Workflow</title>
-      <link>http://localhost:1313/tags/workflow/</link>
-      <pubDate>Sat, 20 Jan 2024 16:45:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/workflow/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Design</title>
-      <link>http://localhost:1313/tags/design/</link>
-      <pubDate>Mon, 15 Jan 2024 14:30:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/design/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Productivity</title>
-      <link>http://localhost:1313/tags/productivity/</link>
-      <pubDate>Mon, 15 Jan 2024 14:30:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/productivity/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Wellness</title>
-      <link>http://localhost:1313/tags/wellness/</link>
-      <pubDate>Mon, 15 Jan 2024 14:30:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/wellness/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Workspace</title>
-      <link>http://localhost:1313/tags/workspace/</link>
-      <pubDate>Mon, 15 Jan 2024 14:30:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/workspace/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Debugging</title>
-      <link>http://localhost:1313/tags/debugging/</link>
-      <pubDate>Wed, 10 Jan 2024 09:15:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/debugging/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Development</title>
-      <link>http://localhost:1313/tags/development/</link>
-      <pubDate>Wed, 10 Jan 2024 09:15:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/development/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Javascript</title>
-      <link>http://localhost:1313/tags/javascript/</link>
-      <pubDate>Wed, 10 Jan 2024 09:15:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/javascript/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tips</title>
-      <link>http://localhost:1313/tags/tips/</link>
-      <pubDate>Wed, 10 Jan 2024 09:15:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/tips/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Coffee</title>
-      <link>http://localhost:1313/tags/coffee/</link>
-      <pubDate>Fri, 05 Jan 2024 08:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/coffee/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Focus</title>
-      <link>http://localhost:1313/tags/focus/</link>
-      <pubDate>Fri, 05 Jan 2024 08:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/focus/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Lifestyle</title>
-      <link>http://localhost:1313/tags/lifestyle/</link>
-      <pubDate>Fri, 05 Jan 2024 08:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/lifestyle/</guid>
+      <title>Tool</title>
+      <link>http://localhost:1313/tags/tool/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/tool/</guid>
       <description></description>
     </item>
   </channel>

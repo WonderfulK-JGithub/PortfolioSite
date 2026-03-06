@@ -3,7 +3,7 @@ title: "Welcome to LofiCode Theme"
 subtitle: "A cozy Hugo theme for developers and creatives"
 date: 2025-01-01T10:00:00Z
 tags: ["hugo", "theme", "lofi", "cozy"]
-featured: true
+#featured: true
 mood: "cozy"
 ---
 
@@ -41,7 +41,7 @@ The search functionality works in real-time, helping your readers find exactly w
 
 LofiCode makes your code look beautiful with syntax highlighting:
 
-```javascript
+```javascript 
 // Example JavaScript code
 function createCozyAtmosphere() {
   const coffee = brewCoffee();

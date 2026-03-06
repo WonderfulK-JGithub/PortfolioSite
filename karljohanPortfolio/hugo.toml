@@ -2,7 +2,7 @@ baseURL = "https://example.com"
 languageCode = "en-us"
 title = "Karl-Johan Warenius"
 theme = "loficode"
-
+#theme = [ 'loficode', 'hugo-shortcodes' ]
 # Enable emoji support
 enableEmoji = true
 
@@ -35,13 +35,13 @@ enableEmoji = true
   # Profile section
   [params.author]
     name = "Karl-Johan Dev"
-    image = "images/profile.png"
+    image = "images/ProfilePic.jpg"
 
   # Social links - Supported platforms: github, twitter, linkedin, email, mastodon, youtube, instagram, facebook
   [params.social]
     github = "https://github.com/example"
-    twitter = "https://twitter.com/example"
-    # linkedin = "https://linkedin.com/in/example"
+    #twitter = "https://twitter.com/example"
+     linkedin = "https://www.linkedin.com/in/karl-johan-warenius-834a77303/"
     # email = "contact@example.com"
     # mastodon = "https://mastodon.social/@example"
     # youtube = "https://youtube.com/@example"
