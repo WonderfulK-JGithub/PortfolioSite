@@ -32,11 +32,11 @@
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/game-project/</loc>
-  </url><url>
     <loc>http://localhost:1313/posts/frogment/</loc>
   </url><url>
     <loc>http://localhost:1313/posts/my-first-post/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/gameproject/</loc>
   </url><url>
     <loc>http://localhost:1313/posts/my-particle-editor/</loc>
   </url><url>
