@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gameproject on Karl-Johan Warenius</title>
+    <link>http://localhost:1313/tags/gameproject/</link>
+    <description>Recent content in Gameproject on Karl-Johan Warenius</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/gameproject/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Game Project: Frogment</title>
+      <link>http://localhost:1313/posts/frogment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/frogment/</guid>
+      <description>&lt;p&gt;My Contributions:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Node Path System&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Node Conntection Tool&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Player Pathfinding&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This was my second game project at The Game Assembly, also in 5 weeks in Unity (Version 2022.3). This was a puzzle game made for Android where you play as a frog character. You automatically move to a block by tapping on it, and there are puzzles to solve by pressing buttons or rotating blocks.&lt;/p&gt;&#xA;&lt;h2 id=&#34;node-connections&#34;&gt;Node connections&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/Frogment_Pathfind.gif&#34; alt=&#34;&#34; title=&#34;Pathfinding&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;On this project my main task was working with the players pathfinding and nodepath system.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Game Project: Tiny Shell Rough Sea</title>
+      <link>http://localhost:1313/posts/my-first-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <description>&lt;p&gt;My Contributions:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;UI&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Audio&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This was my first game project at The Game Assembly, made in 5 weeks in Unity (Version 2022.3). Our team made a simple Race Against the Sun type game where you play as a sea turtle and dodge obstacles in your way.&lt;/p&gt;&#xA;&lt;h2 id=&#34;buttons&#34;&gt;Buttons&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/TSRS_HoverButtons.gif&#34; alt=&#34;&#34; title=&#34;A kitten!&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;On this project my main task was working with the game&amp;rsquo;s UI. Setting up the base functionality for the menus is in unity is straight forward, since Unity already has working buttons built in that can be connected to any C# script function. Later into the project we decided we wanted our buttons to have hover effects and since Unity&amp;rsquo;s buttons did not supprot that I had to implement my own button script.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

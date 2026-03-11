@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tool on Karl-Johan Warenius</title>
+    <link>http://localhost:1313/tags/tool/</link>
+    <description>Recent content in Tool on Karl-Johan Warenius</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/tool/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Particle System Editor</title>
+      <link>http://localhost:1313/posts/my-particle-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/my-particle-editor/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;I made this particle system for my teams game engine. There was no way for our procedural artist to create partciles in our schools game engine, so I made this completly from scratch. When creating this tool I took inspiration from Unitys particle system when deciding what to add.&lt;/p&gt;&#xA;&lt;h2 id=&#34;shape--emission&#34;&gt;Shape &amp;amp; Emission&lt;/h2&gt;&#xA;&lt;p&gt;All particles always spawn with a set lifetime. This value can be the same for every particle, or randomly generated at spawn. Every property in the particle system that can be random has a options to choose between a fixed &lt;strong&gt;Value&lt;/strong&gt;, a random value in a &lt;strong&gt;Range&lt;/strong&gt; or a randomly chosen value of &lt;strong&gt;Either&lt;/strong&gt; left or right value.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
