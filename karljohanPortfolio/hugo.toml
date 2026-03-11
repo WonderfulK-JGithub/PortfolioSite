@@ -72,3 +72,7 @@ enableEmoji = true
 [taxonomies]
   tag = "tags"
   category = "categories"
+  
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
