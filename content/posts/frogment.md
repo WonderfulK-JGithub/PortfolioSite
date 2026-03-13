@@ -3,7 +3,7 @@
 
 tags: ["gameproject"]
 #image: http://localhost:1313/images/profile.png
-image: /images/Frogment_Thumbnail.png
+image: images/Frogment_Thumbnail.png
 featured: true
 title: 'Game Project: Frogment'
 
