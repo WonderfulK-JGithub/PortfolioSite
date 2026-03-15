@@ -3,7 +3,7 @@
 
 tags: ["gameproject"]
 #image: http://localhost:1313/images/profile.png
-image: images/TSRS_Thumbnail.png
+image: /images/TSRS_Thumbnail.png
 featured: true
 title: 'Game Project: Tiny Shell Rough Sea'
 

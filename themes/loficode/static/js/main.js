@@ -22,7 +22,7 @@
       return "dark";
     }
 
-    return "light";
+    return "dark";
   }
 
   // Set initial theme

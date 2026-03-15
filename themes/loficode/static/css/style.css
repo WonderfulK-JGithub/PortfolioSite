@@ -11,15 +11,29 @@
 }
 
 .posts-list {
-   align-items: center;
+   align-items: center!important;
 }
 
 .posts-list-image {
-   max-width: 400px!important;
-   max-height: 400px!important;
+   width: 80%!important;
+   /* max-height: 400px!important; */
    align-content: start;
 }
 
+.post-content {
+    width: 100%!important;
+    }
+
+@media (max-width: 1000px) {
+    .post-item {
+        width: 80%!important;
+    }
+}
+
+/* .posts-image {
+   width: 80px!important;
+   height: 80px;
+} */
 
 :root {
     /* Light mode - Sunset vaporwave */
@@ -155,6 +169,14 @@ body {
 .post-layout,
 .container {
     background: transparent;
+    /* max-width: 90%!important; */
+    align-content: center!important;
+    /* align-items: center!important; */
+}
+
+.post-layout{
+    max-width: 90%!important;
+    /* align-items: center!important; */
 }
 
 @media (max-width: 768px) {
@@ -243,7 +265,7 @@ nav {
 }
 
 .logo::before {
-    content: "☕";
+    content: "";
     font-size: 1.2rem;
     -webkit-text-fill-color: var(--accent-tertiary) !important;
     color: var(--accent-tertiary);
@@ -524,7 +546,7 @@ nav {
 
 /* Main Content */
 .container {
-    max-width: 1000px;
+    /* max-width: 1000px; */
     margin: 0 auto;
     padding: 2rem 1rem;
 }
@@ -752,6 +774,10 @@ nav {
 /* Filter Tags */
 .filter-section {
     margin-bottom: 2rem;
+    align-items: center!important;
+    align-self: center!important;
+    width: 60%;
+    align-self: center!important;
 }
 
 .filter-tags {
@@ -808,7 +834,7 @@ nav {
     position: relative;
     overflow: hidden;
     border: 1px solid var(--border-color);
-    width: 600px !important;
+    width: 40%;
 }
 
 .post-item::before {
@@ -838,7 +864,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    max-width: 1000px;
+    max-width: 80%;
     margin: 0 auto;
     align-content: start;
 }
@@ -2908,7 +2934,7 @@ footer {
 }
 
 .overlay-site-title::before {
-    content: "☕";
+    content: "";
     font-size: 1rem;
     -webkit-text-fill-color: var(--accent-tertiary) !important;
     color: var(--accent-tertiary);
