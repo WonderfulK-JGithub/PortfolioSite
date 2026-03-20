@@ -39,10 +39,10 @@ enableEmoji = true
 
   # Social links - Supported platforms: github, twitter, linkedin, email, mastodon, youtube, instagram, facebook
   [params.social]
-    github = "https://github.com/example"
+    github = "https://github.com/WonderfulK-JGithub"
     #twitter = "https://twitter.com/example"
-     linkedin = "https://www.linkedin.com/in/karl-johan-warenius-834a77303/"
-    # email = "contact@example.com"
+    linkedin = "https://www.linkedin.com/in/karl-johan-warenius-834a77303/"
+    email = "wareniuskarljohan@gmail.com"
     # mastodon = "https://mastodon.social/@example"
     # youtube = "https://youtube.com/@example"
     # instagram = "https://instagram.com/example"

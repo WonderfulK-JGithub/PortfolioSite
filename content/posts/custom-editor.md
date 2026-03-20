@@ -2,7 +2,7 @@
 
 tags: ["Tool"]
 #image: http://localhost:1313/images/profile.png
-image: /images/Particle_Thumbnail.png
+image: /images/Custom_Editor.png
 # featured: true
 title: 'Custom Editor'
 
