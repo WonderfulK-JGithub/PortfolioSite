@@ -1,13 +1,10 @@
 ---
 
-tags: ["Tool"]
-#image: http://localhost:1313/images/profile.png
+tags: ["tool","c++"]
 image: /images/Custom_Editor.png
-# featured: true
 title: 'Custom Editor'
 
 ---
-<!-- ![white kitten](/images/TSRS_Thumbnail.png "A kitten!") -->
 
 ## Overview 
 

@@ -1,7 +1,7 @@
 ---
 title: "Welcome to LofiCode Theme"
 subtitle: "A cozy Hugo theme for developers and creatives"
-date: 2025-01-01T10:00:00Z
+#date: 2025-01-01T10:00:00Z
 tags: ["hugo", "theme", "lofi", "cozy"]
 #featured: true
 mood: "cozy"

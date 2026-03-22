@@ -1,13 +1,10 @@
 ---
 
-tags: ["Tool"]
-#image: http://localhost:1313/images/profile.png
+tags: ["tool","c++"]
 image: /images/Particle_Thumbnail.png
-# featured: true
 title: 'Particle System Editor'
 
 ---
-<!-- ![white kitten](/images/TSRS_Thumbnail.png "A kitten!") -->
 
 ## Overview 
 

@@ -89,12 +89,12 @@
   </div>
 
   <div class="filter-section">
-    <div class="filter-tags">
-      <div class="tag active">All</div>
-      {{ range .Site.Taxonomies.tags.ByCount }}
-      <div class="tag" data-tag="{{ .Name | urlize }}">{{ .Name }}</div>
-      {{ end }}
-    </div>
+      <div class="filter-tags">
+        <div class="tag active">All</div>
+        {{ range .Site.Taxonomies.tags.ByCount }}
+        <div class="tag" data-tag="{{ .Name | urlize }}">{{ .Name }}</div>
+        {{ end }}
+      </div>
   </div>
 
   <div class="posts-list" id="posts-container">
@@ -102,8 +102,13 @@
     $postsPerPage := 10 }} {{ range first $postsPerPage $posts }} {{ partial
     "post-list-item.html" . }} {{ end }}
   </div>
+  <div class="games-list" id="posts-container">
+    {{ $posts := where .Site.RegularPages "Section" "eq" "games" }} {{
+    $postsPerPage := 20 }} {{ range first $postsPerPage $posts }} {{ partial
+    "post-list-item.html" . }} {{ end }}
+  </div>
 
-  {{ $posts := where .Site.RegularPages "Section" "eq" "posts" }} {{ if gt (len
+  <!-- {{ $posts := where .Site.RegularPages "Section" "eq" "posts" }} {{ if gt (len
   $posts) 10 }}
   <div class="load-more-section">
     <button
@@ -124,6 +129,6 @@
       </div>
     </div>
   </div>
-  {{ end }}
+  {{ end }} -->
 </div>
 {{ end }}

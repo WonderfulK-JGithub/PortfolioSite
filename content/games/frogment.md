@@ -1,14 +1,11 @@
 ---
-#date: '2026-02-16T10:52:19+01:00'
 
-tags: ["gameproject"]
-#image: http://localhost:1313/images/profile.png
+tags: ["gameproject","tool","unity"]
 image: /images/Frogment_Thumbnail.png
-featured: true
 title: 'Game Project: Frogment'
 
 ---
-<!-- ![white kitten](/images/TSRS_Thumbnail.png "A kitten!") -->
+🎮 Link to game: [https://coahl.itch.io/frogment](https://coahl.itch.io/frogment)
 
 My Contributions:
 
@@ -141,7 +138,7 @@ public enum NodeType
 
 ![](/images/Frogment_Connection.gif "Connections")
 
-Node connections was then configured in the editor. Since doing that manually for every block in a level would take ages, I made a EditorWindow with node connections functions. I started of with a button that would remove all nodes and a button that would automatically connect nodes that *should* connect (depending on their placement & node type). Later I added a button to auto disconnect nodes, a button to check if node has snapped position and a button that would remove invalid connections
+Node connections was then configured in the editor. Since doing that manually for every block in a level would take ages, I made a EditorWindow with node connections functions. I started of with a button that would remove all nodes and a button that would automatically connect nodes that should connect (depending on their placement & node type). Later I added a button to auto disconnect nodes, a button to check if node has snapped position and a button that would remove invalid connections
 
 ```cs
 public class NodeWindow : EditorWindow
@@ -152,7 +149,6 @@ public class NodeWindow : EditorWindow
         NodeWindow window = GetWindow<NodeWindow>();
         window.titleContent = new GUIContent("NodeWindow");
         window.minSize = new Vector2(200,500);
-        //window.maxSize = new Vector2(500,1000);
     }
 
     private void OnGUI()
