@@ -2,7 +2,7 @@
 
 tags: ["gameproject","tool","unity"]
 image: /images/Frogment_Thumbnail.png
-title: 'Game Project: Frogment'
+title: 'Frogment'
 
 ---
 🎮 Link to game: [https://coahl.itch.io/frogment](https://coahl.itch.io/frogment)

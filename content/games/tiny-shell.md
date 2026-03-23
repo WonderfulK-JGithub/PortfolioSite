@@ -3,7 +3,7 @@
 
 tags: ["gameproject","ui","unity"]
 image: /images/TSRS_Thumbnail.png
-title: 'Game Project: Tiny Shell Rough Sea'
+title: 'Tiny Shell Rough Sea'
 
 ---
 

@@ -10,6 +10,10 @@
     max-height: 800px !important;
 }
 
+.correct-image {
+    max-width: 70%;
+}
+
 @media (max-width: 1000px) {
     .chroma {
         font-size: 0.5rem !important;
