@@ -1,7 +1,7 @@
 ---
 
 tags: ["gameproject","tool","unity"]
-image: /images/Frogment_Thumbnail.png
+image: images/Frogment_Thumbnail.png
 title: 'Frogment'
 
 ---
@@ -18,7 +18,7 @@ This was my second game project at The Game Assembly, also in 5 weeks in Unity (
 
 ## Node connections 
 
-![](/images/Frogment_Pathfind.gif "Pathfinding")
+![](images/Frogment_Pathfind.gif "Pathfinding")
 
 On this project my main task was working with the players pathfinding and nodepath system. 
 
