@@ -1,7 +1,7 @@
 ---
 
 tags: ["tool","c++"]
-image: /images/Terrain_Thumbnail.png
+image: images/Terrain_Thumbnail.png
 title: 'Terrain Editor'
 
 ---
@@ -183,7 +183,7 @@ for (int a = 0; localTriangleTable[cubeIndex][a] != -1; a++)
 
 ```
 
-![](/images/Terrain_Smooth.png "smooth terrain")
+![](../../images/Terrain_Smooth.png "smooth terrain")
 
 ## Multiple chunks
 
@@ -191,7 +191,7 @@ The next step was to increase the area you could edit in. Since the mesh has to 
 
 With chunks, a mesh would only be generaed if the changed values were in that chunk (represented by the greeen debug lines in the image bellow).
 
-![](/images/Terrain_Chunks.png "chunks")
+![](../../images/Terrain_Chunks.png "chunks")
 
 ## Textures
 
@@ -228,18 +228,18 @@ else
 
 I choose to do this inside the pixel shader, instead of pre calculating when genereting the mesh, since vertices are shared which made this approach look weird
 
-![](/images/Terrain_UV.png "textured terrain")
+![](../../images/Terrain_UV.png "textured terrain")
 
 
 ## Chunk bugfix
 
 One problem I had when seperating the terrain into chunks was that vertecies on the chunk's edge had incorrect normals, causing lighting issues like this:
 
-![](/images/Terrain_ChunkFail.png "epic chunk fail")
+![](../../images/Terrain_ChunkFail.png "epic chunk fail")
 
 I solved this by adding a extra loop along the points on the edge when generating the terrain, checking with points 1 step outside the chunk. These checks would not add new triangles, but would affect the normals of the vertices if they existed in the chunk.
 
-![](/images/Terrain_ChunkFix.png "epic chunk fix")
+![](../../images/Terrain_ChunkFix.png "epic chunk fix")
 
 ## Optimizations
 

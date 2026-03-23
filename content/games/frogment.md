@@ -18,7 +18,7 @@ This was my second game project at The Game Assembly, also in 5 weeks in Unity (
 
 ## Node connections 
 
-![](/images/Frogment_Pathfind.gif "Pathfinding")
+![](../../images/Frogment_Pathfind.gif "Pathfinding")
 
 On this project my main task was working with the players pathfinding and nodepath system. 
 
@@ -136,7 +136,7 @@ public enum NodeType
 
 ## Connection Tool
 
-![](/images/Frogment_Connection.gif "Connections")
+![](../../images/Frogment_Connection.gif "Connections")
 
 Node connections was then configured in the editor. Since doing that manually for every block in a level would take ages, I made a EditorWindow with node connections functions. I started of with a button that would remove all nodes and a button that would automatically connect nodes that should connect (depending on their placement & node type). Later I added a button to auto disconnect nodes, a button to check if node has snapped position and a button that would remove invalid connections
 

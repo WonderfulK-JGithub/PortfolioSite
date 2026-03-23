@@ -2,7 +2,7 @@
 #date: '2026-02-16T10:52:19+01:00'
 
 tags: ["gameproject","ui","c++"]
-image: /images/TCOT_Thumbnail.png
+image: images/TCOT_Thumbnail.png
 title: 'Spite: The Curse of Tzalozel'
 
 ---

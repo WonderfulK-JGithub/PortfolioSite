@@ -1,7 +1,7 @@
 ---
 
 tags: ["tool","ui","c++"]
-image: /images/UI_Thumbnail.png
+image: images/UI_Thumbnail.png
 title: 'UI Editor'
 
 ---
@@ -16,15 +16,15 @@ The following is a rough breakdown of the UI editors features:
 
 All UI elements have properties for position, scale and pivot.
 
-![](/images/UI_Position_Size_Pivot.png "position scale pivot")
+![](../../images/UI_Position_Size_Pivot.png "position scale pivot")
 
 Every element also has a name that can be edited in a inputfeild, and can be anchored to a part of the screen. 
 
-![](/images/UI_AnchorType.png "name and anchor")
+![](../../images/UI_AnchorType.png "name and anchor")
 
 To view how the anchors affect the elements, it is possible to change the reference resolution.
 
-![](/images/UI_Anchoring.gif "anchor")
+![](../../images/UI_Anchoring.gif "anchor")
 
 All elements exists in layers, allowing controll over draw order of elements.
 
@@ -34,27 +34,27 @@ All elements exists in layers, allowing controll over draw order of elements.
 
 Images have properties for sprite material and tint color
 
-![](/images/UI_Image.png "image")
+![](../../images/UI_Image.png "image")
 
 Text elements have properties for display text, font, fontsize, alignment and tint color. The rendered text will automatically wrap to fit the width of the text element.
 
-![](/images/UI_Text.png "Text")
+![](../../images/UI_Text.png "Text")
 
 ## Button
 
 Buttons have properties for both image and text. Additionaly, there is a extra color tint for when the button is hovered, a click event property dictating what the button does and a property for what sfx to play.
 
-![](/images/UI_Button.png "Button")
+![](../../images/UI_Button.png "Button")
 
 ## Slider & Checkbox
 
 Sliders have image properties for both the backdrop and the handle. The handle can also be scaled independently from the backdrop.
 
-![](/images/UI_Slider.png "slider")
+![](../../images/UI_Slider.png "slider")
 
 Checkboxes have properties for the backdrop material, default color and hover color. There is also properties for the checkmark sprite.
 
-![](/images/UI_Checkbox.png "checkbox")
+![](../../images/UI_Checkbox.png "checkbox")
 
 ## Editing in code
 
@@ -81,7 +81,7 @@ for (uint32_t layerIndex = 0; layerIndex < canvas.layers.size(); ++layerIndex)
 
 This method quickly became messy once I needed more references to elements. I improved this by creating a Reference class and from the editor generating constant references of elements in a header file. This would be done for all UI element marked as exposed
 
-![](/images/UI_Exposed.png "exposed")
+![](../../images/UI_Exposed.png "exposed")
 
 This made everything more readable and also had the benefit of giving compile errors when elements were renamed or removed, making it easier to find and fix.
 

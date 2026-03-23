@@ -2,7 +2,7 @@
 #date: '2026-02-16T10:52:19+01:00'
 
 tags: ["gameproject","ui","unity"]
-image: /images/TSRS_Thumbnail.png
+image: images/TSRS_Thumbnail.png
 title: 'Tiny Shell Rough Sea'
 
 ---
@@ -19,7 +19,7 @@ This was my first game project at The Game Assembly, made in 5 weeks in Unity (V
 
 ## Buttons 
 
-![](/images/TSRS_HoverButtons.gif "hover buttons!")
+![](../../images/TSRS_HoverButtons.gif "hover buttons!")
 
 On this project my main task was working with the game's UI. Setting up the base functionality for the menus is in unity is straight forward, since Unity already has working buttons built in that can be connected to any C# script function. Later into the project we decided we wanted our buttons to have hover effects and since Unity's buttons did not supprot that I had to implement my own button script.
 
@@ -143,4 +143,4 @@ Since our button sprites would be bubbles, the hover effect was then made to be 
 
 In our game we have a mechanic where you gain a greater score multiplier the less oxygen you had. Something we noticed turing playtests was that most people did not understand that mechanic. To make it easier to understand, I added a bounce effect to the multipliers once they became active.
 
-![](/images/TSRS_BounceText.gif "bounce text!")
+![](../../images/TSRS_BounceText.gif "bounce text!")

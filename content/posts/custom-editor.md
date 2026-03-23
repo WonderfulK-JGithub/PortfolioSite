@@ -1,7 +1,7 @@
 ---
 
 tags: ["tool","c++"]
-image: /images/Custom_Editor.png
+image: images/Custom_Editor.png
 title: 'Custom Editor'
 
 ---
