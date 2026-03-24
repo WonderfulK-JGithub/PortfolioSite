@@ -15,8 +15,9 @@ Hear is a breakdown of how I created this terrain editor:
 ## Creating a mesh
 
 My first step was to implement the marching cubes algorithm. The algorithm works by taking a 3D grid of values, in my case ranging from 0 to 1. It then goes through all the values. For each point it checks the neigbouring 7 points, making a local cube out of all the points. The algorithm then creates triangles inside this cube depending on the values of the points.
+ 
+![](../../images/Terrain_MarchingShowcase.gif "Visual representation of the marching cubes algorithm")
 
-**Insert explaining gif**
 
 I started of with a fixed grid that would create a wave like patern
 
@@ -39,6 +40,8 @@ for (uint32_t z = 0; z < size; ++z)
 ```
 
 I then made my first implementation of the algorithm, generating all vertices making a flat shaded mesh.
+
+![](../../images/Terrain_Hard.png "terrain mesh")
 
 ```cpp
 constexpr float surfaceLevel = 0.5f;
@@ -131,12 +134,6 @@ const uint32_t aSize)
 }
 ```
 
-## The first tools
-
-When I had a mesh to use as reference I moved on to creating the editing tools. The first one I made was a 3D sculpting tool that would raise the value of nearby points.
-
-I then created a tool that would lower and raise terrain as if it was a heightmap.
-
 ## Smooth shading
 
 So far the terrain had duplicate vertices, which made the terrain flat shaded. This is not uncommon for marching cubes terrain in general but I wanted my terrain to be smooth. To do this, I needed to create a VertexID and a map going from VertexID to index inside the vertexPosition vector.
@@ -183,7 +180,17 @@ for (int a = 0; localTriangleTable[cubeIndex][a] != -1; a++)
 
 ```
 
-![](../../images/Terrain_Smooth.png "smooth terrain")
+![](../../images/Terrain_SmoothShaded.png "smooth terrain")
+
+## The first tools
+
+When I had a mesh to use as reference I moved on to creating the editing tools. The first one I made was a 3D sculpting tool that would raise the value of nearby points.
+
+![](../../images/Terrain_3DSculpt.gif "sculpt in 3d")
+
+I then created a tool that would lower and raise terrain as if it was a heightmap.
+
+![](../../images/Terrain_2DSculpt.gif "reaise and lower terrain")
 
 ## Multiple chunks
 
@@ -192,6 +199,31 @@ The next step was to increase the area you could edit in. Since the mesh has to 
 With chunks, a mesh would only be generaed if the changed values were in that chunk (represented by the greeen debug lines in the image bellow).
 
 ![](../../images/Terrain_Chunks.png "chunks")
+
+## Erase, Flatten and Smooth
+
+With a bigger terrain to edit on it was time to implement more tools to edit with.
+
+I made a tool to erase sculpting done..
+
+![](../../images/Terrain_Erase.gif "erase")
+
+.., a Tool to flatten terrain..
+
+![](../../images/Terrain_Flatten.gif "flatten")
+
+.., and a tool to make the terrain more smooth.
+
+![](../../images/Terrain_Smoothing.gif "smoothing")
+
+I also made a 3D varaint of the smoothing tool that is better to use on more 3D sculpted terrain.
+
+![](../../images/Terrain_Smooth3D.gif "smoothing 3D")
+
+
+## Ramp and Tunnel
+
+
 
 ## Textures
 
