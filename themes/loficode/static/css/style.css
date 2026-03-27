@@ -3,6 +3,13 @@
 
 
 /* My css */
+
+img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 1rem;
+  }
+
 .chroma {
     font-size: 0.8rem !important;
     overflow-y: auto !important;
@@ -27,6 +34,9 @@
     .posts-list {
     position: static!important;
     width: 100%!important;
+    }
+    .nav-links {
+        gap: 0rem !important;
     }
 }
 
@@ -237,6 +247,7 @@ body {
     z-index: 100;
     border-bottom: 1px solid var(--border-color);
     box-shadow: 0 4px 20px var(--shadow-color);
+    
 }
 
 @media (max-width: 768px) {
@@ -259,7 +270,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    min-width: 0; /* Allow shrinking */
+    min-width: 150px /* Allow shrinking */
 }
 
 .back-link {
@@ -337,9 +348,9 @@ nav {
         gap: 0.5rem;
     }
 
-    .nav-links {
+    /* .nav-links {
         display: none;
-    }
+    } */
 
     .logo {
         font-size: 1.2rem;

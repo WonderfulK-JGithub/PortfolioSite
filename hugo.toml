@@ -29,8 +29,8 @@ enableEmoji = true
   path = "page"
 
 [params]
-  description = "A cozy example site showcasing the LofiCode Hugo theme"
-  tagline = "UI and Tools programmer"
+  description = "Karl-Johan Warenius's portfolio"
+  tagline = "Game Programmer"
 
   # Profile section
   [params.author]

@@ -198,7 +198,7 @@ The next step was to increase the area you could edit in. Since the mesh has to 
 
 With chunks, a mesh would only be generaed if the changed values were in that chunk (represented by the greeen debug lines in the image bellow).
 
-![](../../images/Terrain_Chunks.png "chunks")
+![](../../images/Terrain_Chunks2.png "chunks")
 
 ## Erase, Flatten and Smooth
 
@@ -223,7 +223,11 @@ I also made a 3D varaint of the smoothing tool that is better to use on more 3D 
 
 ## Ramp and Tunnel
 
+I then moved on to making more complex tools, starting of with a ramp tool. The tool allows the user to select two points on the terrain, move those points if necisary, and create a ramp based on the line between the points
 
+![](../../images/Terrain_Ramp.gif "ramp")
+
+![](../../images/Terrain_Tunnel.gif "tunnel")
 
 ## Textures
 
