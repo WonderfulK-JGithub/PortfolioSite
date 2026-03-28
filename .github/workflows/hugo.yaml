@@ -155,14 +155,14 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-      - name: Ensure theme symlink for exampleSite
+      - name: Ensure theme symlink for PortfolioSite
         run: |
           THEME_ROOT="$GITHUB_WORKSPACE"
-          EXAMPLE_SITE="$GITHUB_WORKSPACE/exampleSite"
+          EXAMPLE_SITE="$GITHUB_WORKSPACE/PortfolioSite"
           mkdir -p "$EXAMPLE_SITE/themes"
           ln -sf "$THEME_ROOT" "$EXAMPLE_SITE/themes/loficode-hugo-theme"
-      - name: List exampleSite/themes contents for debug
-        run: ls -l exampleSite/themes
+      - name: List PortfolioSite/themes contents for debug
+        run: ls -l PortfolioSite/themes
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
@@ -170,13 +170,13 @@ jobs:
         run: |
           BASE_URL="${{ steps.pages.outputs.base_url }}"
           HTTPS_URL="${BASE_URL/http:/https:}"
-          cd exampleSite && hugo \
+          cd PortfolioSite && hugo \
             --minify \
             --baseURL "${HTTPS_URL%/}/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./exampleSite/public
+          path: ./public
 
   # Deployment job
   deploy:
