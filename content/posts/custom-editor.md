@@ -2,6 +2,7 @@
 
 tags: ["tool","c++"]
 image: images/Custom_Editor.png
+date: '2020-02-16T10:52:19+01:00'
 title: 'Custom Editor'
 
 ---

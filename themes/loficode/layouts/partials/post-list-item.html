@@ -23,13 +23,13 @@
     {{ end }}
     </div>
 
-    {{ if .Params.subtitle }}
-    <p class="post-list-subtitle">{{ .Params.subtitle }}</p>
-    {{ end }}
-
     {{ if .Params.image }}
     <!-- <p class="post-list-subtitle">{{ .Params.subtitle }}</p> -->
     <img src= "{{ .Params.image }}" , alt="Karl-Johan Dev" class="posts-list-image">
+    {{ end }}
+
+    {{ if .Params.subtitle }}
+    <p class="post-list-subtitle">{{ .Params.subtitle }}</p>
     {{ end }}
 
     <!-- <p class="post-excerpt-vaporwave">

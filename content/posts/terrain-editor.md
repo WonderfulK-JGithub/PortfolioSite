@@ -2,13 +2,14 @@
 
 tags: ["tool","c++"]
 image: images/Terrain_Thumbnail.png
+date: '2025-02-16T10:52:19+01:00'
 title: 'Terrain Editor'
-
+subtitle: "3D Terrain Editor using marching cubes algorithm"
 ---
 
 ## Overview 
 
-This was my specialization project at The Game Assembly. This terrain editor lets the user create terrain both by rasing and lowering terrain, but also by sculpting in 3D.Instead of using a heightmap, the terrain is generated with the Marching Cubes algorithm. This makes it possible to sculpt things like tunnels and overhangs, something that would not be possible using a heightmap.
+This was my specialization project at The Game Assembly. The terrain editor lets the user create terrain both by rasing and lowering terrain, but also by sculpting in 3D.Instead of using a heightmap, the terrain is generated with the Marching Cubes algorithm. This makes it possible to sculpt things like tunnels and overhangs, something that would not be possible using a heightmap.
 
 Hear is a breakdown of how I created this terrain editor:
 
@@ -39,9 +40,7 @@ for (uint32_t z = 0; z < size; ++z)
 }
 ```
 
-I then made my first implementation of the algorithm, generating all vertices making a flat shaded mesh.
-
-![](../../images/Terrain_Hard.png "terrain mesh")
+I then made my first implementation of the algorithm.  
 
 ```cpp
 constexpr float surfaceLevel = 0.5f;
@@ -62,9 +61,9 @@ const uint32_t aSize)
 				uint32_t cubeIndex{};
 				float dataCube[8]{};
 
-				for (uint32_t i = 0; i < std::size(cornerChecks); i++)
+				for (uint32_t i = 0; i < std::size(localCornerChecks); i++)
 				{
-					const Tga::Vector3ui& check = cornerChecks[i];
+					const Tga::Vector3ui& check = localCornerChecks[i];
 					dataCube[i]                 = aVoxelValues[(z + check.z) * squaredSize + 
 					(y + check.y) * aSize + x + check.x];
 					if (dataCube[i] > surfaceLevel)
@@ -112,31 +111,19 @@ const uint32_t aSize)
 			}
 		}
 	}
-
-	aMeshData.Vertices.resize(vertexPositions.size());
-	aMeshData.Indices.resize(vertexPositions.size());
-
-	for (uint32_t i = 0; i < vertexPositions.size(); ++i)
-	{
-		aMeshData.Vertices[i].Position   = vertexPositions[i];
-		aMeshData.Vertices[i].Position.w = 1.f;
-		aMeshData.Indices[i]             = i;
-	}
-
-	aMeshData.NumberOfVertices = vertexPositions.size();
-	aMeshData.NumberOfIndices  = vertexPositions.size();
-
-	aMeshData.Bounds.BoxExtents = Tga::Vector3f(static_cast<float>(cellSize));
-	aMeshData.Bounds.Center     = aMeshData.Bounds.BoxExtents * 0.5f;
-	aMeshData.Bounds.Radius     = sqrtf(static_cast<float>(cellSize * cellSize * cellSize));
-
-	Goose::ModelLoader::CreateMeshBuffers(aMeshData);
 }
 ```
 
+To verify that the algorithm was working I first rendered triangles with debug lines.
+![](../../images/Terrain_DebugMesh.png "terrain debug lines")
+
+When the algorithm worked correctly I then generated a mesh with the vertecies and rendered it with a basic material.
+
+![](../../images/Terrain_Hard.png "terrain mesh")
+
 ## Smooth shading
 
-So far the terrain had duplicate vertices, which made the terrain flat shaded. This is not uncommon for marching cubes terrain in general but I wanted my terrain to be smooth. To do this, I needed to create a VertexID and a map going from VertexID to index inside the vertexPosition vector.
+So far the terrain mesh did not share vertices between triangles, making the terrain flat shaded. This is not uncommon for marching cubes terrain in general but I wanted my terrain to be smooth. To do this, I needed to create a VertexID and a map going from VertexID to index inside the vertexPosition vector.
 
 ```cpp
 struct VertexID
@@ -226,6 +213,8 @@ I also made a 3D varaint of the smoothing tool that is better to use on more 3D 
 I then moved on to making more complex tools, starting of with a ramp tool. The tool allows the user to select two points on the terrain, move those points if necisary, and create a ramp based on the line between the points
 
 ![](../../images/Terrain_Ramp.gif "ramp")
+
+From the ramp tool I reused the point selection functionality to make a new toot. This one removes terrain between the points, creating a tunnel
 
 ![](../../images/Terrain_Tunnel.gif "tunnel")
 

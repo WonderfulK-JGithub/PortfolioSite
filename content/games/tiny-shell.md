@@ -4,6 +4,7 @@ date: '2024-02-16T10:52:19+01:00'
 tags: ["gameproject","ui","unity"]
 image: images/TSRS_Thumbnail.png
 title: 'Tiny Shell Rough Sea'
+subtitle: "a desktop game made in Unity in 6 weeks with a team of 15"
 
 ---
 
