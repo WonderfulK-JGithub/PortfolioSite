@@ -16,7 +16,7 @@ Other than playing and programming video games, I have been active in Nacka För
 
 ## Contact
 
-CV: [Karl-Johan_Warenius_CV_TGA_WIP.pdf](/images/Karl-Johan_Warenius_CV_TGA_WIP.pdf)
+CV: [Karl-Johan_Warenius_CV_TGA_WIP.pdf](images/Karl-Johan_Warenius_CV_TGA_WIP.pdf)
 
 Github: [https://github.com/WonderfulK-JGithub](https://github.com/WonderfulK-JGithub)
 

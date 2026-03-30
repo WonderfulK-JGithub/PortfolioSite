@@ -25,7 +25,9 @@
 
     {{ if .Params.image }}
     <!-- <p class="post-list-subtitle">{{ .Params.subtitle }}</p> -->
+    <a href="{{ .Permalink }}">
     <img src= "{{ .Params.image }}" , alt="Karl-Johan Dev" class="posts-list-image">
+    </a>
     {{ end }}
 
     {{ if .Params.subtitle }}

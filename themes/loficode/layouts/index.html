@@ -8,6 +8,7 @@
         class="profile-photo"
       />
     </div>
+    <p class="main-title">Karl-Johan Warenius</p>
     <p class="profile-tagline">{{ .Site.Params.tagline | markdownify }}</p>
     <div class="social-links">
       {{ range $name, $url := .Site.Params.Social }} {{ if eq $name "github" }}
@@ -88,14 +89,14 @@
     </div>
   </div>
 
-  <div class="filter-section">
+  <!-- <div class="filter-section">
       <div class="filter-tags">
         <div class="tag active">All</div>
         {{ range .Site.Taxonomies.tags.ByCount }}
         <div class="tag" data-tag="{{ .Name | urlize }}">{{ .Name }}</div>
         {{ end }}
       </div>
-  </div>
+  </div> -->
 
   <div class="posts-list" id="posts-container">
     {{ $posts := where .Site.RegularPages "Section" "eq" "posts" }} {{

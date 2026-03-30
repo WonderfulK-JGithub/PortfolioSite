@@ -1,7 +1,7 @@
 ---
 
 tags: ["tool","c++"]
-image: images/Terrain_Thumbnail.png
+image: images/Terrain_Animated_Thumbnail.gif
 date: '2025-02-16T10:52:19+01:00'
 title: 'Terrain Editor'
 subtitle: "3D Terrain Editor using marching cubes algorithm"
@@ -9,7 +9,7 @@ subtitle: "3D Terrain Editor using marching cubes algorithm"
 
 ## Overview 
 
-This was my specialization project at The Game Assembly. The terrain editor lets the user create terrain both by rasing and lowering terrain, but also by sculpting in 3D.Instead of using a heightmap, the terrain is generated with the Marching Cubes algorithm. This makes it possible to sculpt things like tunnels and overhangs, something that would not be possible using a heightmap.
+This was my specialization project at The Game Assembly. The terrain editor lets the user create terrain both by rasing and lowering terrain, but also by sculpting in 3D. Instead of using a heightmap, the terrain is generated with the Marching Cubes algorithm. This makes it possible to sculpt things like tunnels and overhangs, something that would not be possible using a heightmap.
 
 Hear is a breakdown of how I created this terrain editor:
 

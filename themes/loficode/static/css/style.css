@@ -10,6 +10,33 @@ img {
     border-radius: 1rem;
   }
 
+.github-repo {
+    align-items: center!important;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title {
+    font-family: 'Orbitron', monospace;
+    font-size: 3.8rem;
+    font-weight: 700;
+    background: var(--btn-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    max-width: 100%;
+    flex-shrink: 1;
+    line-height: 1.2;
+    word-break: break-word;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+
+}
+
 .chroma {
     font-size: 0.8rem !important;
     overflow-y: auto !important;
@@ -44,6 +71,12 @@ img {
     }
     .nav-links {
         gap: 0rem !important;
+    }
+    .main-title {
+        font-size: 2.8rem!important;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    
     }
 }
 
@@ -302,7 +335,7 @@ nav {
 
 .logo {
     font-family: 'Orbitron', monospace;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 700;
     background: var(--btn-gradient);
     -webkit-background-clip: text;
@@ -1545,7 +1578,7 @@ pre, pre code {
     margin-top: 3rem;
     padding-top: 2rem;
     border-top: 1px solid var(--border-color);
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
