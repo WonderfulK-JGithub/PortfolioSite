@@ -2,7 +2,7 @@
 date: '2025-02-16T10:52:19+01:00'
 
 tags: ["gameproject","ui","c++"]
-image: images/TCOT_Thumbnail.png
+image: images/TCOT_Thumbnail2.png
 title: 'Spite: The Curse of Tzalozel'
 subtitle: "a desktop game made in custom game engine in 14 weeks with a team of 17"
 

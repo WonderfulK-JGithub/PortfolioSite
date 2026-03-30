@@ -2,10 +2,10 @@
 #date: '2026-02-16T10:52:19+01:00'
 date: '2024-02-16T10:52:19+01:00'
 tags: ["gameproject","ui","unity"]
-image: images/TSRS_Thumbnail.png
+image: images/TSRS_Thumbnail2.png
 title: 'Tiny Shell Rough Sea'
 subtitle: "a desktop game made in Unity in 6 weeks with a team of 15"
-
+github: https://github.com/WonderfulK-JGithub/Tiny-Shell-Rough-Sea
 ---
 
 🎮 Link to game: [https://coahl.itch.io/tiny-shell-rough-sea](https://coahl.itch.io/tiny-shell-rough-sea)

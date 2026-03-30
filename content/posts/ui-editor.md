@@ -1,7 +1,7 @@
 ---
 
 tags: ["tool","ui","c++"]
-image: images/UI_Thumbnail.png
+image: images/UI_Animated_Thumbnail.gif
 date: '2026-02-16T10:52:19+01:00'
 title: 'UI Editor'
 subtitle: "a UI editor made in custom engine"

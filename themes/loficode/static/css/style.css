@@ -10,6 +10,17 @@ img {
     border-radius: 1rem;
   }
 
+.embargo {
+    color: var(--text-secondary);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: auto;
+    border-radius: 1rem;
+    max-width: 60%;
+    font-size: small;
+  }
+
 .github-repo {
     align-items: center!important;
     display: flex;
@@ -32,8 +43,28 @@ img {
     flex-shrink: 1;
     line-height: 1.2;
     word-break: break-word;
-    padding-top: 5rem;
+    padding-top: 2.5rem;
     padding-bottom: 2rem;
+
+}
+
+.list-title {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: var(--btn-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    max-width: 100%;
+    flex-shrink: 1;
+    line-height: 1.2;
+    word-break: break-word;
+    padding-top: 2rem;
 
 }
 
@@ -78,6 +109,13 @@ img {
         padding-bottom: 1rem;
     
     }
+    .list-title {
+        font-size: 1.2rem!important;
+    
+    }
+    .embargo {
+        font-size: 0.65rem !important;
+      }
 }
 
 .games-list {
@@ -159,7 +197,7 @@ img {
         --accent-secondary: #00CED1;
         --accent-tertiary: #FF6B35;
         --text-primary: #E0E0FF;
-        --text-secondary: #B8B3D4;
+        --text-secondary: #d1d1d1;
         --text-muted: #8A7CA8;
         --border-color: rgba(255, 0, 128, 0.3);
         --shadow-color: rgba(255, 107, 53, 0.2);
@@ -213,7 +251,7 @@ img {
     --accent-secondary: #00FFFF;
     --accent-tertiary: #FF6B35;
     --text-primary: #E0E0FF;
-    --text-secondary: #B8B3D4;
+    --text-secondary: #ccd3d8;
     --text-muted: #8A7CA8;
     --border-color: rgba(255, 0, 128, 0.3);
     --shadow-color: rgba(255, 107, 53, 0.2);

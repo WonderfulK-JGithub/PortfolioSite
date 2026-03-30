@@ -7,6 +7,13 @@
       </h2>
     </div>
 
+    {{ if .Params.image }}
+    <!-- <p class="post-list-subtitle">{{ .Params.subtitle }}</p> -->
+    <a href="{{ .Permalink }}">
+    <img src= "{{ .Params.image }}" , alt="Karl-Johan Dev" class="posts-list-image">
+    </a>
+    {{ end }}
+
     <div class="post-date-with-badges">
       <!-- <span class="post-date">{{ .Date.Format "2006.01.02" }}</span> -->
       {{ if .Params.featured }}
@@ -23,12 +30,7 @@
     {{ end }}
     </div>
 
-    {{ if .Params.image }}
-    <!-- <p class="post-list-subtitle">{{ .Params.subtitle }}</p> -->
-    <a href="{{ .Permalink }}">
-    <img src= "{{ .Params.image }}" , alt="Karl-Johan Dev" class="posts-list-image">
-    </a>
-    {{ end }}
+    
 
     {{ if .Params.subtitle }}
     <p class="post-list-subtitle">{{ .Params.subtitle }}</p>
