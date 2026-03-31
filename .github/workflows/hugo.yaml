@@ -31,7 +31,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.128.0
+      HUGO_VERSION: 0.156.0
     steps:
       - name: Install Hugo CLI
         run: |
@@ -55,7 +55,7 @@ jobs:
           mkdir -p "$EXAMPLE_SITE/themes"
           ln -sf "$THEME_ROOT" "$EXAMPLE_SITE/themes/loficode-hugo-theme"
       - name: List exampleSite/themes contents for debug
-        run: ls -l exampleSite/themes
+        run: ls -l themes
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
