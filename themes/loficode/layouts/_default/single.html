@@ -49,7 +49,9 @@
                 {{ end }}
             </header>
             {{ if .Params.image }}
+            {{ if not .Params.hideThumbnail }}
             <img src= "../../{{ .Params.image }}" alt="Karl-Johan Dev" class="post-list-subtitle">
+            {{ end }}
             {{ end }}
             <div class="post-body">
                 {{ .Content }}

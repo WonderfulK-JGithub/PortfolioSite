@@ -6,7 +6,9 @@ image: images/TSRS_Thumbnail2.png
 title: 'Tiny Shell Rough Sea'
 subtitle: "a desktop game made in Unity in 6 weeks with a team of 15"
 github: https://github.com/WonderfulK-JGithub/Tiny-Shell-Rough-Sea
+hideThumbnail: true
 ---
+{{< youtube id=0KOZCcSho6c   >}}
 
 🎮 Link to game: [https://coahl.itch.io/tiny-shell-rough-sea](https://coahl.itch.io/tiny-shell-rough-sea)
 

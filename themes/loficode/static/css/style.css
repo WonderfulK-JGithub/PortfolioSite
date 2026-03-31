@@ -68,6 +68,15 @@ img {
 
 }
 
+.post-content a{
+    color: var(--text-tertiary);
+}
+
+.post-video {
+    width: 80%;
+}
+
+
 .chroma {
     font-size: 0.8rem !important;
     overflow-y: auto !important;
@@ -198,6 +207,7 @@ img {
         --accent-tertiary: #FF6B35;
         --text-primary: #E0E0FF;
         --text-secondary: #d1d1d1;
+        --text-tertiary: #62a5d4;
         --text-muted: #8A7CA8;
         --border-color: rgba(255, 0, 128, 0.3);
         --shadow-color: rgba(255, 107, 53, 0.2);
@@ -252,6 +262,7 @@ img {
     --accent-tertiary: #FF6B35;
     --text-primary: #E0E0FF;
     --text-secondary: #ccd3d8;
+    --text-tertiary: #62a5d4;
     --text-muted: #8A7CA8;
     --border-color: rgba(255, 0, 128, 0.3);
     --shadow-color: rgba(255, 107, 53, 0.2);
@@ -1137,7 +1148,7 @@ nav {
 }
 
 .continue-reading-vaporwave {
-    color: var(--accent-primary);
+    color: var(--accent-primary) !important;
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 600;

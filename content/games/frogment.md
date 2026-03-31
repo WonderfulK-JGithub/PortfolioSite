@@ -5,7 +5,10 @@ image: images/Frogment_Thumbnail.png
 title: 'Frogment'
 subtitle: "a mobile game made in Unity in 6 weeks with a team of 15"
 github: https://github.com/WonderfulK-JGithub/Frogment
+hideThumbnail: true
 ---
+{{< youtube id=N28Ncb6aeAU   >}}
+
 🎮 Link to game: [https://coahl.itch.io/frogment](https://coahl.itch.io/frogment)
 
 My Contributions:

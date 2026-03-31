@@ -14,7 +14,7 @@ Outside of school I have participated in various game jams on itch.io, most rece
 
 Other than playing and programming video games, I have been active in Nacka Församling's church, being a youth leader for 3 years and working full time as a youth assistant for 1 year. My time there helped me greatly with socialicing with people and being confortable in a leader position.
 
-## Contact
+## Contact Links
 
 CV: [Karl-Johan_Warenius_CV_TGA_WIP.pdf](images/Karl-Johan_Warenius_CV_TGA_WIP.pdf)
 
