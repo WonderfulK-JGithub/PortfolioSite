@@ -5,6 +5,9 @@ theme = "loficode"
 #theme = [ 'loficode', 'hugo-shortcodes' ]
 # Enable emoji support
 enableEmoji = true
+relativeURLs = false
+canonifyURLs = true
+
 
 # Output formats for SPA functionality
 [outputs]
