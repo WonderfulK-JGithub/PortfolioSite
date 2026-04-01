@@ -11,8 +11,6 @@ subtitle: "a UI editor made in custom engine"
 
 I made this editor for our teams engine during early development of *Spite: Curse of Tzalozel*. During previous game project in the school engine, UI element placements were often hardcoded and could not be changed in the editor. My goal with this UI editor was to allow our artists to set the layout for our UI.
 
-The following is a rough breakdown of the UI editors features:
-
 ## UI Elements
 
 All UI elements have properties for position, scale and pivot.
