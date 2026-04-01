@@ -1,10 +1,13 @@
-baseURL = "https://karl-johan-warenius.com"
+baseURL = "https://karl-johan-warenius.com/"
 languageCode = "en-us"
 title = "Karl-Johan Warenius"
 theme = "loficode"
 #theme = [ 'loficode', 'hugo-shortcodes' ]
 # Enable emoji support
 enableEmoji = true
+relativeURLs = false
+canonifyURLs = true
+
 
 # Output formats for SPA functionality
 [outputs]
