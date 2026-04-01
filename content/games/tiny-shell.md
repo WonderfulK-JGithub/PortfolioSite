@@ -1,14 +1,13 @@
 ---
 #date: '2026-02-16T10:52:19+01:00'
 date: '2024-02-16T10:52:19+01:00'
-tags: ["gameproject","ui","unity"]
+tags: ["gameproject","unity"]
 image: images/TSRS_Thumbnail2.png
 title: 'Tiny Shell Rough Sea'
-subtitle: "a desktop game made in Unity in 6 weeks with a team of 15"
+subtitle: "A desktop game made in Unity in 6 weeks with a team of 15. I mainly worked on UI functionality."
 github: https://github.com/WonderfulK-JGithub/Tiny-Shell-Rough-Sea
-hideThumbnail: true
+#hideThumbnail: true
 ---
-{{< youtube id=0KOZCcSho6c   >}}
 
 🎮 Link to game: [https://coahl.itch.io/tiny-shell-rough-sea](https://coahl.itch.io/tiny-shell-rough-sea)
 
@@ -147,3 +146,7 @@ Since our button sprites would be bubbles, the hover effect was then made to be 
 In our game we have a mechanic where you gain a greater score multiplier the less oxygen you had. Something we noticed turing playtests was that most people did not understand that mechanic. To make it easier to understand, I added a bounce effect to the multipliers once they became active.
 
 ![](../../images/TSRS_BounceText.gif "bounce text!")
+
+## Trailer
+
+{{< youtube id=0KOZCcSho6c   >}}

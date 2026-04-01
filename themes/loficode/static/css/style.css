@@ -21,6 +21,13 @@ img {
     font-size: small;
   }
 
+.embargo-box
+{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
 .github-repo {
     align-items: center!important;
     display: flex;
@@ -109,6 +116,15 @@ img {
     position: static!important;
     width: 100%!important;
     }
+    .main-list {
+        display: flex;
+        flex-direction: column!important;
+        /* padding-top: 0%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+        padding-left: 5%; */
+        margin-bottom: 2rem;
+    }
     .nav-links {
         gap: 0rem !important;
     }
@@ -127,21 +143,35 @@ img {
       }
 }
 
+.padding-class{
+    width:10%;
+}
+
+.main-list {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    margin-bottom: 2rem;
+}
+
 .games-list {
     align-items: center!important;
-    left: 5%;
-    width: 40%;
-    position:absolute;
+    /* left: 5%;
+    position: absolute; */
+    width: 45%;
     gap: 3.5rem;
     display: flex;
     flex-direction: column;
 }
 
 .posts-list {
-    left: 55%;
-    position: absolute;
+    /* left: 55%;
+    position: absolute; */
     align-items: center!important;
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     gap: 3.5rem;
@@ -734,7 +764,10 @@ nav {
 
 /* Author Profile Section */
 .author-profile-section {
-    padding: 2rem 1.5rem;
+    padding-top: 2rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0rem;
+    padding-left: 1.5rem;
     margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
@@ -1631,6 +1664,8 @@ pre, pre code {
     padding-top: 2rem;
     border-top: 1px solid var(--border-color);
     display: flex;
+    align-items: center;
+    flex-direction: column;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }

@@ -35,9 +35,9 @@
                     </div> -->
                 </div>
                 <h1 class="post-title">{{ .Title }}</h1>
-                {{ if .Params.subtitle }}
+                <!-- {{ if .Params.subtitle }}
                 <p class="post-subtitle">{{ .Params.subtitle }}</p>
-                {{ end }}
+                {{ end }} -->
 
                 {{ if .Params.tags }}
                 <div class="post-tags-header">
@@ -109,24 +109,6 @@
                     </a>
                     {{ end }} {{ end }}
                   </div>
-                  
-                <!-- {{ with .PrevInSection }}
-                <div class="nav-previous">
-                    <span class="nav-label">← Previous</span>
-                    <a href="{{ .Permalink }}" class="nav-title">{{ .Title }}</a>
-                </div>
-                {{ else }}
-                <div></div>
-                {{ end }}
-
-                {{ with .NextInSection }}
-                <div class="nav-next">
-                    <span class="nav-label">Next →</span>
-                    <a href="{{ .Permalink }}" class="nav-title">{{ .Title }}</a>
-                </div>
-                {{ else }}
-                <div></div>
-                {{ end }} -->
             </nav>
             <p class="embargo">"I am part of The Game Assembly’s internship program. As per the agreement between the Games Industry and The Game Assembly, neither student nor company may be in contact with one another regarding internships before April 15.  Any internship offers can be made on April 27th, at the earliest.”</p>
         </article>

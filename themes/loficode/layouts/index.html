@@ -86,9 +86,7 @@
         <i class="fab fa-facebook social-icon"></i>
       </a>
       {{ end }} {{ end }}
-    </div>
-    <p class="embargo">"I am part of The Game Assembly’s internship program. As per the agreement between the Games Industry and The Game Assembly, neither student nor company may be in contact with one another regarding internships before April 15.  Any internship offers can be made on April 27th, at the earliest.”</p>
-        
+    </div>   
   </div>
 
   <!-- <div class="filter-section">
@@ -99,21 +97,24 @@
         {{ end }}
       </div>
   </div> -->
-
-  <div class="posts-list" id="posts-container">
-    <p class="list-title">Tool Projects</p>
-    {{ $posts := where .Site.RegularPages "Section" "eq" "posts" }} {{
-    $postsPerPage := 10 }} {{ range first $postsPerPage $posts }} {{ partial
-    "post-list-item.html" . }} {{ end }}
-  </div>
-  <div class="games-list" id="posts-container">
-    <p class="list-title">Game Projects</p>
-    {{ $posts := where .Site.RegularPages "Section" "eq" "games" }} {{
-    $postsPerPage := 20 }} {{ range first $postsPerPage $posts }} {{ partial
-    "post-list-item.html" . }} {{ end }}
-  </div>
-
-  <!-- {{ $posts := where .Site.RegularPages "Section" "eq" "posts" }} {{ if gt (len
+  
+    <div class="main-list">
+      <div class="posts-list" id="posts-container">
+        <p class="list-title">Tool Projects</p>
+        {{ $posts := where .Site.RegularPages "Section" "eq" "posts" }} {{
+        $postsPerPage := 10 }} {{ range first $postsPerPage $posts }} {{ partial
+        "post-list-item.html" . }} {{ end }}
+      </div>
+      <div class="padding-class"></div>
+      <div class="games-list" id="posts-container">
+        <p class="list-title">Game Projects</p>
+        {{ $posts := where .Site.RegularPages "Section" "eq" "games" }} {{
+        $postsPerPage := 20 }} {{ range first $postsPerPage $posts }} {{ partial
+        "post-list-item.html" . }} {{ end }}
+      </div>
+    </div>
+  
+   <!-- {{ $posts := where .Site.RegularPages "Section" "eq" "posts" }} {{ if gt (len
   $posts) 10 }}
   <div class="load-more-section">
     <button
@@ -135,7 +136,38 @@
     </div>
   </div>
   {{ end }} -->
-   
+  <nav class="post-navigation">
+    <div class="social-links">
+        {{ range $name, $url := .Site.Params.Social }} {{ if eq $name "github" }}
+        <a
+          href="{{ $url }}"
+          target="_blank"
+          rel="noopener"
+          class="social-link"
+          title="GitHub"
+        >
+          <i class="fab fa-github social-icon"></i>
+        </a>
+        {{ else if eq $name "linkedin" }}
+        <a
+          href="{{ $url }}"
+          target="_blank"
+          rel="noopener"
+          class="social-link"
+          title="LinkedIn"
+        >
+          <i class="fab fa-linkedin social-icon"></i>
+        </a>
+        {{ else if eq $name "email" }}
+        <a href="mailto:{{ $url }}" class="social-link" title="Email">
+          <i class="fas fa-envelope social-icon"></i>
+        </a>
+        {{ end }} {{ end }}
+      </div>
+</nav>
+<div class="embargo-box">
+<p class="embargo">"I am part of The Game Assembly’s internship program. As per the agreement between the Games Industry and The Game Assembly, neither student nor company may be in contact with one another regarding internships before April 15.  Any internship offers can be made on April 27th, at the earliest.”</p>
+</div>
 </div>
 
 {{ end }}

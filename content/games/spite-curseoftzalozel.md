@@ -1,14 +1,14 @@
 ---
 date: '2025-02-16T10:52:19+01:00'
 
-tags: ["gameproject","ui","c++"]
+tags: ["gameproject","c++"]
 image: images/TCOT_Thumbnail2.png
 title: 'Spite: The Curse of Tzalozel'
-subtitle: "a desktop game made in custom game engine in 14 weeks with a team of 17"
-hideThumbnail: true
+subtitle: "A desktop game made in custom game engine in 14 weeks with a team of 17. I mainly worked on UI and Scene loading."
+github: https://github.com/WonderfulK-JGithub/The-Curse-of-Tzalozel
+#hideThumbnail: true
 
 ---
-{{< youtube id=kpPr7Tqi7X4   >}}
 
 🎮 Link to game: [https://there-goes-the-goose.itch.io/spite-the-curse-of-tzalozel](https://there-goes-the-goose.itch.io/spite-the-curse-of-tzalozel)
 
@@ -108,3 +108,6 @@ void Goose::Serialization::WriteData(BinaryBuffer& aBinaryBuffer, const SimpleMa
 
 Storing the scene data in binary reduced load times even greater, from 1 seconds to around 0.05 (almost instant). This way of serializing was also easy to write which later allowed me to store models and animations in binary aswell, which was also signifigantly faster than loading from fbx.
 
+## Trailer
+
+{{< youtube id=kpPr7Tqi7X4   >}}
