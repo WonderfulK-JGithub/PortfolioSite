@@ -9,18 +9,18 @@
 
   // Auto-detect theme preference
   function getInitialTheme() {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-      return savedTheme;
-    }
+    // const savedTheme = localStorage.getItem("theme");
+    // if (savedTheme) {
+    //   return savedTheme;
+    // }
 
-    // Use system preference if no saved theme
-    if (
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-    ) {
-      return "dark";
-    }
+    // // Use system preference if no saved theme
+    // if (
+    //   window.matchMedia &&
+    //   window.matchMedia("(prefers-color-scheme: dark)").matches
+    // ) {
+    //   return "dark";
+    // }
 
     return "dark";
   }
