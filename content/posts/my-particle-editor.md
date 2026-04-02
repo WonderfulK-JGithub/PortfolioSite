@@ -5,7 +5,7 @@ image: images/Particle_Animated_Thumbnail.gif
 date: '2024-02-16T10:52:19+01:00'
 title: 'Particle System Editor'
 subtitle: "A particle system editor made from the ground up in custom engine"
-github: https://github.com/WonderfulK-JGithub
+github: https://github.com/WonderfulK-JGithub/Particle-Editor
 ---
 
 ## Overview 

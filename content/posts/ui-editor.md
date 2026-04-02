@@ -2,14 +2,15 @@
 
 tags: ["tool","ui","c++"]
 image: images/UI_Animated_Thumbnail.gif
-date: '2026-02-16T10:52:19+01:00'
+date: '2025-02-16T10:52:19+01:00'
 title: 'UI Editor'
 subtitle: "a UI editor made in custom engine"
+github: https://github.com/WonderfulK-JGithub/UI-Editor
 ---
 
 ## Overview 
 
-I made this editor for our teams engine during early development of *Spite: Curse of Tzalozel*. During previous game project in the school engine, UI element placements were often hardcoded and could not be changed in the editor. My goal with this UI editor was to allow our artists to set the layout for our UI.
+I made this editor for our teams engine while working on *Spite: Curse of Tzalozel*. During previous game project in the school engine, UI element placements were often hardcoded and could not be changed in the editor. My goal with this UI editor was to allow our artists to set the layout for our UI.
 
 ## UI Elements
 
@@ -27,7 +28,7 @@ To view how the anchors affect the elements, it is possible to change the refere
 
 All elements exists in layers, allowing controll over draw order of elements.
 
-**Insert Image**
+![](../../images/UI_Layers.png "anchor")
 
 ## Image & Text
 
