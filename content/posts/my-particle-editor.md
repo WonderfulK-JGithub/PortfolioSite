@@ -10,33 +10,33 @@ github: https://github.com/WonderfulK-JGithub/Particle-Editor
 
 ## Overview 
 
-I made this particle system for my teams game engine. There was no way for our procedural artist to create partciles in our schools game engine, so I made this completly from scratch. When creating this tool I took inspiration from Unitys particle system when deciding what to add.
+I made this particle system for my school group's game engine. There was no way for our procedural artist to create particles in our school's game engine, so I made this completely from scratch. When creating this tool I took inspiration from Unity's particle system when deciding what to add. During the development of *Spite: The Curse of Tzalozel* I would add more features, depending on what we needed for our game.
 
 ## Shape & Emission
 
-All particles always spawn with a set lifetime. This value can be the same for every particle, or randomly generated at spawn. Every property in the particle system that can be random has a options to choose between a fixed **Value**, a random value in a **Range** or a randomly chosen value of **Either** left or right value.
+All particles always spawn with a set lifetime. This value can be the same for every particle, or randomly generated at spawn. Every property in the particle system that can be random has options to choose between a fixed **Value**, a random value in a **Range** or a randomly chosen value of **Either** left or right value.
 
 ![white kitten](../../images/Particle_Lifetime.png "")
 
-To spawn the particles I have settings for when to spawn them in **Emission** and where to spawn them in **Shape**. In emission, you can edit how many particles to spawn per seconds, how many per distance (Used to spawn when physically moving the particle system) and bursts. For burst emissions you can set how many burst in total, how many particles in every burst and the time between every burst.
+To spawn the particles I have settings for when to spawn them in **Emission** and where to spawn them in **Shape**. In emission, you can edit how many particles to spawn per second, how many per distance (Used to spawn when physically moving the particle system) and bursts. For burst emissions you can set how many burst in total, how many particles in every burst and the time between every burst.
 
-If **Emit World** is checked particles will move independetly once spawned. Otherwise they will move locally to the transform of the particle system.
+If **Emit World** is checked particles will move independently once spawned. Otherwise they will move locally to the transform of the particle system.
 
 ![white kitten](../../images/Particle_Emission.png "")
 
-In Shape, you can choose between emitting in a sphere, cone or box.There are more settings for every shape type. The cone has settings for radius and height, and a arc setting that can controll angle thing. You can also controll thickness, which when smaller will make particles spawn more to the edge of the shape. 
+In Shape, you can choose between emitting in a sphere, cone or box. There are more settings for every shape type. The cone has settings for radius and height, and an arc setting that controls how much the cone’s circular base is used for emission. You can also control thickness, which when smaller will make particles spawn more to the edge of the shape. 
 
-The direction the particles spawn with is determined by their spawn position and the emitors shape type At the request of our procedural artists, I also added an option to spawn particles with a fixed direction.
+The direction the particles spawn with is determined by their spawn position and the emitter's shape type At the request of our procedural artists, I also added an option to spawn particles with a fixed direction.
 
 ![white kitten](../../images/Particle_Shape.png "")
 
 ## Speed, Size & Rotation
 
-Speed, size and rotation can all be edited for both start values and over time change. For the overtime values, I added an option to make a **curve** for the value. The curve can have points moved, added and removed. You can also choose if interpolation between points is linear or hermite.
+Speed, size and rotation can all be edited for both start values and over time change. For the over time values, I added an option to make a **curve** for the value. The curve can have points moved, added and removed. You can also choose if interpolation between points is linear or hermite.
 
 ![white kitten](../../images/Particle_Curve.gif "")
 
-This is the code for the Curve, both how it displays in editor and how it evalutes a value:
+This is the code for the Curve, both how it displays in editor and how it evaluates a value:
 
 ```cpp
 namespace Goose
@@ -518,11 +518,11 @@ uint8_t Goose::FunctionCurve::DisplayCurveEdit()
 
 ## Color
 
-Particle color can also be edited for both start values and over time change, both using a gradient. The start value will be a random color in the first gradient, and the second gradient is a overtime multiplier.
+Particle color can also be edited for both start values and over time change, both using a gradient. The start value will be a random color in the first gradient, and the second gradient is an over-time multiplier.
 
 ![white kitten](../../images/Particle_Color.gif "")
 
-The gradient property was also custom made and has simular code to the curve:
+The gradient property was also custom made and has similar code to the curve:
 
 ```cpp
 
@@ -862,32 +862,32 @@ void Goose::Gradient::AddGradientToDrawList(const ImVec2& aStart, const ImVec2& 
 
 ## Rendering
 
-In the rendering tab, you can assign material to render with and what type of particle to render. The default type is a **Billboarded** sprite. Another sprite option is **Velocity Sprite**, which will align the sprite's
+In the rendering tab, you can assign a material to render with and what type of particle to render. The default type is a **Billboarded** sprite. Another sprite option is **Velocity Sprite**, which will align the sprite's
 y-axis to the direction it travels in and then rotate it along the y-axis towards the camera.
 
-There are also different UV options. You can choose to scale the UV and render with random parts.
+There are also different UV options. You can choose to scale the UV and render with random regions.
 
 ![white kitten](../../images/Particle_VelocitySprite.png "")
 
-The last particle type is **Mesh**. Having this option on will also enable rotation-options around the x and y axis.
+The last particle type is **Mesh**. Having this option on will also enable rotation options around the x and y axis.
 
 ![white kitten](../../images/Particle_Mesh.png "")
 
-## Multiple Emitors
+## Multiple Emitters
 
-A particle system supports multiple emitors, aLlowing for multiple particle types in one system.
+A particle system supports multiple emitters, allowing for multiple particle types in one system.
 
-Additionaly, you can add **events**, that executes on particle birth or death/, that can trigger a specifik emitor.
+Additionally, you can add **events**, that execute on particle birth or death, that can trigger a specific emitter.
 
 ![white kitten](../../images/Particle_OnDeath.gif "")
 
 ## Gravity & Noise
 
-This was the last feature I added to the particle editor. Gravity will apply a force on the particle overtime, and you can choose if the gravity direction is down or towards a certain point.
+This was the last feature I added to the particle editor. Gravity will apply a force on the particle over time, and you can choose if the gravity direction is down or towards a certain point.
 
 ![Particle gravity gif](../../images/Particle_Gravity.gif "Particle gravity gif")
 
-Noise will psuedo-randomly offet the particle depending on its position. Strength controlls how big the offset is, frequency how big the variation is and update time how often the noise is recalculated
+Noise will pseudo-randomly offset the particle depending on its position. Strength controls how big the offset is, frequency controls how big the variation is and update time dictates how often the noise is recalculated
 
 ![Particle noise gif](../../images/Particle_Noise.gif "Particle noise gif")
 

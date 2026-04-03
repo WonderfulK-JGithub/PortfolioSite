@@ -5,7 +5,7 @@ tags: ["gameproject","c++","custom engine"]
 video: images/Tzalozel_Video.mp4
 image: images/TCOT_Thumbnail2.png
 title: 'Spite: The Curse of Tzalozel'
-subtitle: "A desktop game made in custom game engine in 14 weeks with a team of 17. I mainly worked on UI Functionality and Scene loading."
+subtitle: "A desktop game made in custom game engine in 14 weeks with a team of 17. I mainly worked on UI functionality and Scene loading."
 github: https://github.com/WonderfulK-JGithub/The-Curse-of-Tzalozel
 #hideThumbnail: true
 
@@ -16,22 +16,22 @@ github: https://github.com/WonderfulK-JGithub/The-Curse-of-Tzalozel
 My Contributions:
 - **UI**
 - **Scene Loading & Transitions**
-- **Engine Maintenence**
+- **Engine Maintenance**
 
-This was my 5th game at the game assembly. It is a diablo III inspired hack and slash where you traverse the jungle and defeat an evil godess.
+This was my 5th game at The Game Assembly. It is a Diablo III inspired hack and slash where you traverse the jungle and defeat an evil goddess.
 
-Between previous projects we were assigned to new teams, but starting with this project we would have the same team throughout the second year. We would also make our games in our own custom engine. This was challenging, since we had to create tools for the engine and develop the game at the same time. My contrubutions were mainly on the engine side, such as creating our *UI editor* and *particle system editor*. On the game side I worked on the UI functionality and scene loading.
+Between previous projects we were assigned to new teams, but starting with this project we would have the same team throughout the second year. We would also make our games in our own custom engine. This was challenging since we had to create tools for the engine and develop the game at the same time. My contributions were mainly on the engine side, such as creating our *UI editor* and *particle system editor*. On the game side I worked on the UI functionality and scene loading.
 
 
 ## Scene loading
 
-In our scene editor, every scene object is saved in a separete json file. This allows multiple designers to work on differents parts of the levels without getting merge conflicts.
+In our scene editor, every scene object is saved in a separate json file. This allows multiple designers to work on different parts of the levels without getting merge conflicts.
 
-It has a very huge drawback though and that is **loading times**. Loading thousands of different files takes alot of time, especially if the filepaths are not loaded in windows cache. To solve this problem, without removing the benefits of multiple object files, I added a build process for our release version of the game. This process would go throuhg every scene, and combine all scene objects into 1 larger json file.
+It has a drawback though and that is **loading times**. Loading thousands of different files takes a lot of time, especially if the filepaths are not loaded in windows cache. To solve this problem, without removing the benefits of multiple object files, I added a build process for our release version of the game. This process would go through every scene, and combine all scene objects into 1 larger json file.
 
 ![](../../images/TCOT_Build.png "build!")
 
-This alone speed up the loading process on avarge from 5 seconds to 1 second. I would iterate on this even more by saving the build file in a binary format instead of json. To achive this I made a binary buffer class that was easy to read from and write two.
+This alone sped up loading times on average from 5 seconds to 1 second. I would iterate on this even more by saving the build file in a binary format instead of json. To achieve this I made a binary buffer class that was easy to read from and write to.
 
 ```cpp
 namespace Goose
@@ -107,7 +107,7 @@ void Goose::Serialization::WriteData(BinaryBuffer& aBinaryBuffer, const SimpleMa
 }
 ```
 
-Storing the scene data in binary reduced load times even greater, from 1 seconds to around 0.05 (almost instant). This way of serializing was also easy to write which later allowed me to store models and animations in binary aswell, which was also signifigantly faster than loading from fbx.
+Storing the scene data in binary reduced load times even further, from 1 second to around 0.05 (almost instant). This way of serializing was also easy to write which later allowed me to store models and animations in binary as well, which was also significantly faster than loading from fbx.
 
 ## Trailer
 

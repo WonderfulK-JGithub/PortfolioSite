@@ -10,18 +10,18 @@ github: https://github.com/WonderfulK-JGithub/Terrain-Editor
 
 ## Overview 
 
-This was my specialization project at The Game Assembly. My goal with the terrain editor was to let the user create terrain both by rasing and lowering terrain, like the landscape tool in Unreal, but **also** by sculpting in 3D. Instead of using a heightmap, my terrain was to be generated with the Marching Cubes algorithm. This would allow for vertices to exist above each other, something a heightmap can't allow, making it possible to sculpt things like tunnels and overhangs.
+This was my specialization project at The Game Assembly. My goal with the terrain editor was to let the user create terrain both by raising and lowering terrain, like the landscape tool in Unreal, but also by sculpting in 3D. Instead of using a heightmap, my terrain was to be generated with the Marching Cubes algorithm. This would allow for vertices to exist above each other, something a heightmap can't allow, making it possible to sculpt things like tunnels and overhangs.
 
-Hear is a in order breakdown of how I created this terrain editor:
+Here is an in order breakdown of how I created this terrain editor:
 
 ## Creating a mesh
 
-My first step was to implement the marching cubes algorithm. The algorithm works by taking a 3D grid of values, in my case ranging from 0 to 1. It then goes through all the values. For each point it checks the neigbouring 7 points, making a local cube out of all the points. The algorithm then creates triangles inside this cube depending on the values of the points.
+My first step was to implement the Marching Cubes algorithm. The algorithm works by taking a 3D grid of values, in my case ranging from 0 to 1. It then goes through all the values. For each point it checks the neighbouring 7 points, making a local cube out of all the points. The algorithm then creates triangles inside this cube depending on the values of the points.
  
-![](../../images/Terrain_MarchingShowcase.gif "Visual representation of the marching cubes algorithm")
+![](../../images/Terrain_MarchingShowcase.gif "Visual representation of the Marching Cubes algorithm")
 
 
-I started of with a fixed grid that would create a wave like patern
+I started off with a fixed grid that would create a wave-like pattern
 
 ```cpp
 constexpr uint32_t size = 17;
@@ -118,13 +118,13 @@ const uint32_t aSize)
 To verify that the algorithm was working I first rendered triangles with debug lines.
 ![](../../images/Terrain_DebugMesh.png "terrain debug lines")
 
-When the algorithm worked correctly I then generated a mesh with the vertecies and rendered it with a basic material.
+When the algorithm worked correctly I then generated a mesh with the vertices and rendered it with a basic material.
 
 ![](../../images/Terrain_Hard.png "terrain mesh")
 
 ## Smooth shading
 
-So far the terrain mesh did not share vertices between triangles, making the terrain flat shaded. This is not uncommon for marching cubes terrain in general but I wanted my terrain to be smooth. To do this, I needed to create a VertexID and a map going from VertexID to index inside the vertexPosition vector.
+So far the terrain's mesh did not share vertices between triangles, making the terrain flat shaded. This is not uncommon for marching cubes terrain in general but I wanted my terrain to be smooth. To do this, I needed to create a VertexID and a map going from VertexID to index inside the vertexPosition vector.
 
 ```cpp
 struct VertexID
@@ -178,13 +178,13 @@ When I had a mesh to use as reference I moved on to creating the editing tools. 
 
 I then created a tool that would lower and raise terrain as if it was a heightmap.
 
-![](../../images/Terrain_2DSculpt.gif "reaise and lower terrain")
+![](../../images/Terrain_2DSculpt.gif "raise and lower terrain")
 
 ## Multiple chunks
 
-The next step was to increase the area you could edit in. Since the mesh has to be generated every time a value in the grid is changed, the terrains mesh needed to be divided into different chunks to make it more performant.
+The next step was to increase the area you could edit in. Since the mesh has to be generated every time a value in the grid is changed, the terrain's mesh needed to be divided into different chunks to make it more performant.
 
-With chunks, a mesh would only be generaed if the changed values were in that chunk (represented by the greeen debug lines in the image bellow).
+With chunks, a mesh would only be generated if the changed values were in that chunk (represented by the green debug lines in the image below).
 
 ![](../../images/Terrain_Chunks2.png "chunks")
 
@@ -196,32 +196,32 @@ I made a tool to erase sculpting done..
 
 ![](../../images/Terrain_Erase.gif "erase")
 
-.., a Tool to flatten terrain..
+.., a tool to flatten terrain..
 
 ![](../../images/Terrain_Flatten.gif "flatten")
 
-.., and a tool to make the terrain more smooth.
+.., and a tool to make the terrain smoother.
 
 ![](../../images/Terrain_Smoothing.gif "smoothing")
 
-I also made a 3D varaint of the smoothing tool that is better to use on more 3D sculpted terrain.
+I also made a 3D variant of the smoothing tool that is better to use on more 3D sculpted terrain.
 
 ![](../../images/Terrain_Smooth3D.gif "smoothing 3D")
 
 
 ## Ramp and Tunnel
 
-I then moved on to making more complex tools, starting of with a ramp tool. The tool allows the user to select two points on the terrain, move those points if necisary, and create a ramp based on the line between the points
+I then moved on to making more complex tools, starting off with a ramp tool. The tool allows the user to select two points on the terrain, move those points if necessary, and create a ramp based on the line between the points
 
 ![](../../images/Terrain_Ramp.gif "ramp")
 
-From the ramp tool I reused the point selection functionality to make a new toot. This one removes terrain between the points, creating a tunnel
+From the ramp tool I reused the point selection functionality to make a new tool. This one removes terrain between the points, creating a tunnel
 
 ![](../../images/Terrain_Tunnel.gif "tunnel")
 
 ## Textures
 
-To calculate the UVs for the terrain, I check what axis the normal is most aligned to using the dot product. From this you can use world position as uv, and get a accurate tangent and binormal by using the cross product.
+To calculate the UVs for the terrain, I check what axis the normal is most aligned to using the dot product. From this you can use world position as uv, and get an accurate tangent and binormal by using the cross product.
 
 ```hlsl
 float2 uv;
@@ -252,24 +252,24 @@ else
 }
 ```
 
-I choose to do this inside the pixel shader, instead of pre calculating when genereting the mesh, since vertices are shared which made this approach look weird
+I chose to do this inside the pixel shader, instead of pre-calculating when generating the mesh, since vertices are shared which made this approach look weird
 
 ![](../../images/Terrain_UV.png "textured terrain")
 
 
 ## Chunk bugfix
 
-One problem I had when seperating the terrain into chunks was that vertecies on the chunk's edge had incorrect normals, causing lighting issues like this:
+One problem I had when separating the terrain into chunks was that vertices on the chunk's edge had incorrect normals, causing lighting issues like this:
 
 ![](../../images/Terrain_ChunkFail.png "epic chunk fail")
 
-I solved this by adding a extra loop along the points on the edge when generating the terrain, checking with points 1 step outside the chunk. These checks would not add new triangles, but would affect the normals of the vertices if they existed in the chunk.
+I solved this by adding an extra loop along the points on the edge when generating the terrain, checking with points 1 step outside the chunk. These checks would not add new triangles, but would affect the normals of the vertices if they existed in the chunk.
 
 ![](../../images/Terrain_ChunkFix.png "epic chunk fix")
 
 ## Optimizations
 
-Editing many chunks at once is very performance heavy. To increase performance I seperated chunk generations into different tasks that would be executed on multiple threads in a thread pool, massivly increasing performance.
+Editing many chunks at once is very performance-heavy. To increase performance I separated chunk generations into different tasks that would be executed on multiple threads in a thread pool, massively increasing performance.
 
 ```cpp
 void Goose::TerrainDocument::GenerateChunks(const std::vector<Tga::Vector3<uint32_t>>& aChunks)
@@ -341,4 +341,4 @@ for (uint32_t z = 0; z < size; ++z)
 
 
 ```
-Having the grid this way ensures the merory is aligned along the y axis. This makes the code for checking and adding height to the terrain more cache friendly, and made the 2d tools noticably faster.
+Having the grid this way ensures the memory is aligned along the y axis. This makes the code for checking and adding height to the terrain more cache-friendly, and made the 2D tools noticeably faster.

@@ -14,19 +14,19 @@ github: https://github.com/WonderfulK-JGithub/Frogment
 My Contributions:
 
 - **Node Path System**
-- **Node Conntection Tool**
+- **Node Connection Tool**
 - **Player Pathfinding**
 
 
-This was my second game project at The Game Assembly, also in 5 weeks in Unity. This was a puzzle game made for Android where you play as a frog character. You automatically move to a block by tapping on it, and there are puzzles to solve by pressing buttons or rotating blocks.
+This was my second game project at The Game Assembly, completed in 5 weeks in Unity. This was a puzzle game made for Android where you play as a frog character. You automatically move to a block by tapping on it, and there are puzzles to solve by pressing buttons or rotating blocks.
 
 ## Node connections 
 
 ![](../../images/Frogment_Pathfind.gif "Pathfinding")
 
-On this project my main task was working with the players pathfinding and nodepath system. 
+On this project my main task was working with the player's pathfinding and node path system. 
 
-Every walkable block has a WalkableNode script assigned to it. To not overcomplicate things, this script only contains references to connected nodes and what node type it is (regular, stairs or ladders). I also added gizmo lines to show the node connections, which made it easy to detect whenever a connection was missing or should be removed
+Every walkable block has a WalkableNode script assigned to it. To keep things simple, this script only contains references to connected nodes and what node type it is (regular, stairs or ladders). I also added gizmo lines to show the node connections, which made it easy to spot missing or incorrect connections.
 
 ```cs
 public class WalkableNode : MonoBehaviour
@@ -49,7 +49,7 @@ public class WalkableNode : MonoBehaviour
     {
         if(myConnectedNodes.Contains(aNode))
         {
-            Debug.Log("Aldready has node " + aNode.name + " in list", this);
+            Debug.Log("Already has node " + aNode.name + " in list", this);
             return;
         }
 
@@ -59,7 +59,7 @@ public class WalkableNode : MonoBehaviour
     {
         if (!myConnectedNodes.Contains(aNode))
         {
-            Debug.Log("Does not have node " + aNode.name + " in it's list", this);
+            Debug.Log("Does not have node " + aNode.name + " in its list", this);
             return;
         }
 
@@ -84,7 +84,7 @@ public class WalkableNode : MonoBehaviour
     }
 
     /// <summary>
-    /// Returns the offseted position the player should walk to when this is the current node
+    /// Returns the offset position the player should walk to when this is the current node
     /// </summary>
     public Vector3 GetWalkPosition()
     {
@@ -142,7 +142,7 @@ public enum NodeType
 
 ![](../../images/Frogment_Connection.gif "Connections")
 
-Node connections was then configured in the editor. Since doing that manually for every block in a level would take ages, I made a EditorWindow with node connections functions. I started of with a button that would remove all nodes and a button that would automatically connect nodes that should connect (depending on their placement & node type). Later I added a button to auto disconnect nodes, a button to check if node has snapped position and a button that would remove invalid connections
+Node connections were then configured in the editor. Manually connecting every block would take ages, so I made a editor window with node connections functions. I started off with a button that would remove all nodes and a button that would automatically connect nodes that should connect (depending on their placement & node type). Later I added a button to auto disconnect nodes, a button to check if node has snapped position and a button that would remove invalid connections
 
 ```cs
 public class NodeWindow : EditorWindow
@@ -190,7 +190,7 @@ public class NodeWindow : EditorWindow
         GUILayout.BeginHorizontal();
         GUILayout.FlexibleSpace();
 
-        buttonContent = new GUIContent("Auto connect", "Goes through all Walkable Nodes and conncects it with neighbouring nodes it should be connected with");
+        buttonContent = new GUIContent("Auto connect", "Goes through all Walkable Nodes and connects it with neighbouring nodes it should be connected with");
         if (GUILayout.Button(buttonContent, GUILayout.Width(100), GUILayout.Height(50)))
         {
             WalkableNode[] allNodes = FindObjectsOfType<WalkableNode>();

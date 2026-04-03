@@ -24,9 +24,9 @@ This was my first game project at The Game Assembly, made in 5 weeks in Unity. O
 
 ![](../../images/TSRS_HoverButtons.gif "hover buttons!")
 
-On this project my main task was working with the game's UI. Setting up the base functionality for the menus is in unity is straight forward, since Unity already has working buttons built in that can be connected to any C# script function. Later into the project we decided we wanted our buttons to have hover effects and since Unity's buttons did not supprot that I had to implement my own button script.
+On this project, my main task was working with the game's UI. Setting up the base functionality for the menus is in Unity is straightforward, since Unity already has working buttons built in that can be connected to any C# script function. Later in the project we decided we wanted our buttons to have hover effects and since Unity's buttons did not support that I had to implement my own button script.
 
-Making a button script in Unity is still straight forward, since you can expose a UnityEvent variable in the script to connect any C# script function. Unity also has Interfaces for pointer events, so using those made the script simple.
+Making a button script in Unity is still straightforward, since you can expose a UnityEvent variable in the script to connect any C# script function. Unity also has interfaces for pointer events, so using those made the script simple.
 
 ```cs 
 public class Script_AdvancedButton : MonoBehaviour, IPointerDownHandler,IPointerEnterHandler,IPointerExitHandler
@@ -140,11 +140,11 @@ public class Script_AdvancedButton : MonoBehaviour, IPointerDownHandler,IPointer
 The first effect I made was making the buttons expand when hovered. This was done by setting a target scale variable, depending on if the button is hovered or not, and smoothly moving the local scale to the target value. 
 
 
-Since our button sprites would be bubbles, the hover effect was then made to be bouncy. I did this by alternating between a greater and smaller target scale, with a overshoot variable. That variable would then decrease every bounce to smoothly stop the bouncing
+Since our button sprites would be bubbles, the hover effect was then made to be bouncy. I did this by alternating between a greater and smaller target scale, with an overshoot variable. That variable would then decrease every bounce to smoothly stop the bouncing
 
 ## GUI
 
-In our game we have a mechanic where you gain a greater score multiplier the less oxygen you had. Something we noticed turing playtests was that most people did not understand that mechanic. To make it easier to understand, I added a bounce effect to the multipliers once they became active.
+In our game we have a mechanic where you gain a greater score multiplier the less oxygen you have. Something we noticed during playtests was that most people did not understand the mechanic. To make it easier to understand, I added a bounce effect to the multipliers when they became active.
 
 ![](../../images/TSRS_BounceText.gif "bounce text!")
 

@@ -10,7 +10,7 @@ github: https://github.com/WonderfulK-JGithub/UI-Editor
 
 ## Overview 
 
-I made this editor for our teams engine while working on *Spite: Curse of Tzalozel*. During previous game project in the school engine, UI element placements were often hardcoded and could not be changed in the editor. My goal with this UI editor was to allow our artists to set the layout for our UI.
+I made this editor for our team's engine while working on *Spite: Curse of Tzalozel*. During previous game projects in the school engine, UI element placements were often hardcoded and could not be changed in the editor. My goal with this UI editor was to allow our artists to set the layout for our UI.
 
 ## UI Elements
 
@@ -18,7 +18,7 @@ All UI elements have properties for position, scale and pivot.
 
 ![](../../images/UI_Position_Size_Pivot.png "position scale pivot")
 
-Every element also has a name that can be edited in a inputfeild, and can be anchored to a part of the screen. 
+Every element also has a name that can be edited in an input feild, and can be anchored to a part of the screen. 
 
 ![](../../images/UI_AnchorType.png "name and anchor")
 
@@ -26,7 +26,7 @@ To view how the anchors affect the elements, it is possible to change the refere
 
 ![](../../images/UI_Anchoring.gif "anchor")
 
-All elements exists in layers, allowing controll over draw order of elements.
+All elements exist in layers, allowing control over draw order of elements.
 
 ![](../../images/UI_Layers.png "anchor")
 
@@ -36,13 +36,13 @@ Images have properties for sprite material and tint color
 
 ![](../../images/UI_Image.png "image")
 
-Text elements have properties for display text, font, fontsize, alignment and tint color. The rendered text will automatically wrap to fit the width of the text element.
+Text elements have properties for display text, font, font size, alignment and tint color. The rendered text will automatically wrap to fit the width of the text element.
 
 ![](../../images/UI_Text.png "Text")
 
 ## Button
 
-Buttons have properties for both image and text. Additionaly, there is a extra color tint for when the button is hovered, a click event property dictating what the button does and a property for what sfx to play.
+Buttons have properties for both image and text. Additionally, there is an extra color tint for when the button is hovered, a click event property dictating what the button does and a property for what sfx to play.
 
 ![](../../images/UI_Button.png "Button")
 
@@ -58,7 +58,7 @@ Checkboxes have properties for the backdrop material, default color and hover co
 
 ## Editing in code
 
-When programming the UI, I often needed access to the element in code. In the beggining, this was done by simply looping through all layers in a specifik canvas, looking for an element with a hardcoded name, and saving the layer index and ID, like this:
+When programming the UI, I often needed access to the element in code. In the begining, this was done by simply looping through all layers in a specific canvas, looking for an element with a hardcoded name, and saving the layer index and ID, like this:
 
 ```cpp
 const Tga::StringId sliderNameToCheck = "Slider"_tgaid;
@@ -79,7 +79,7 @@ for (uint32_t layerIndex = 0; layerIndex < canvas.layers.size(); ++layerIndex)
 }
 ```
 
-This method quickly became messy once I needed more references to elements. I improved this by creating a Reference class and from the editor generating constant references of elements in a header file. This would be done for all UI element marked as exposed
+This method quickly became messy once I needed more references to elements. I improved this by creating a Reference class and from the editor generating constant references of elements in a header file. This would be done for all UI elements marked as exposed
 
 ![](../../images/UI_Exposed.png "exposed")
 
@@ -102,7 +102,7 @@ void PrintSliderValue()
 }
 ```
 
-The idea of generating constants in a header file is something I got from working with the Wwise audio engine, which simularly creates constants for every audio event. How I generate the file is by continusly adding text to a string. I wrap every canvas in it's own namespace and creating variables for every exposed element based on their names.
+The idea of generating constants in a header file is something I got from working with the Wwise audio engine, which similarly creates constants for every audio event. How I generate the file is by continuously adding text to a string. I wrap every canvas in it's own namespace and creating variables for every exposed element based on their names.
 
 ```cpp
 void Goose::GenerateCanvasHeader()
