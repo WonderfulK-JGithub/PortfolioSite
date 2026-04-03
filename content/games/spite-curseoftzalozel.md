@@ -5,7 +5,7 @@ tags: ["gameproject","c++","custom engine"]
 video: images/Tzalozel_Video.mp4
 image: images/TCOT_Thumbnail2.png
 title: 'Spite: The Curse of Tzalozel'
-subtitle: "A desktop game made in custom game engine in 14 weeks with a team of 17. I mainly worked on UI and Scene loading."
+subtitle: "A desktop game made in custom game engine in 14 weeks with a team of 17. I mainly worked on UI Functionality and Scene loading."
 github: https://github.com/WonderfulK-JGithub/The-Curse-of-Tzalozel
 #hideThumbnail: true
 

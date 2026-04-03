@@ -10,7 +10,7 @@ github: https://github.com/WonderfulK-JGithub/Terrain-Editor
 
 ## Overview 
 
-This was my specialization project at The Game Assembly. The terrain editor lets the user create terrain both by rasing and lowering terrain, but also by sculpting in 3D. Instead of using a heightmap, the terrain is generated with the Marching Cubes algorithm. This makes it possible to sculpt things like tunnels and overhangs, something that would not be possible using a heightmap.
+This was my specialization project at The Game Assembly. My goal with the terrain editor was to let the user create terrain both by rasing and lowering terrain, like the landscape tool in Unreal, but **also** by sculpting in 3D. Instead of using a heightmap, my terrain was to be generated with the Marching Cubes algorithm. This would allow for vertices to exist above each other, something a heightmap can't allow, making it possible to sculpt things like tunnels and overhangs.
 
 Hear is a in order breakdown of how I created this terrain editor:
 
