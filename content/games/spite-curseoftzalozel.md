@@ -1,7 +1,8 @@
 ---
 date: '2025-02-16T10:52:19+01:00'
 
-tags: ["gameproject","c++"]
+tags: ["gameproject","c++","custom engine"]
+video: images/Tzalozel_Video.mp4
 image: images/TCOT_Thumbnail2.png
 title: 'Spite: The Curse of Tzalozel'
 subtitle: "A desktop game made in custom game engine in 14 weeks with a team of 17. I mainly worked on UI and Scene loading."
@@ -19,7 +20,7 @@ My Contributions:
 
 This was my 5th game at the game assembly. It is a diablo III inspired hack and slash where you traverse the jungle and defeat an evil godess.
 
-Between previous projects we were assigned to new teams, but starting with this project we would have the same team throughout the second year. This game also marked the beginning of our teams custom engine. 
+Between previous projects we were assigned to new teams, but starting with this project we would have the same team throughout the second year. We would also make our games in our own custom engine. This was challenging, since we had to create tools for the engine and develop the game at the same time. My contrubutions were mainly on the engine side, such as creating our *UI editor* and *particle system editor*. On the game side I worked on the UI functionality and scene loading.
 
 
 ## Scene loading

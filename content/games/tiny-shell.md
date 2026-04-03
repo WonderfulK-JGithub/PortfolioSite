@@ -2,6 +2,7 @@
 #date: '2026-02-16T10:52:19+01:00'
 date: '2024-02-16T10:52:19+01:00'
 tags: ["gameproject","unity"]
+video: images/TSRS_Video.mp4
 image: images/TSRS_Thumbnail2.png
 title: 'Tiny Shell Rough Sea'
 subtitle: "A desktop game made in Unity in 6 weeks with a team of 15. I mainly worked on UI functionality."
@@ -17,7 +18,7 @@ My Contributions:
 - **Audio**
 - **Scene Transitions**
 
-This was my first game project at The Game Assembly, made in 5 weeks in Unity (Version 2022.3). Our team made a simple Race Against the Sun type game where you play as a sea turtle and dodge obstacles in your way.
+This was my first game project at The Game Assembly, made in 5 weeks in Unity. Our team made a simple Race Against the Sun type game where you play as a sea turtle and dodge obstacles in your way.
 
 ## Buttons 
 

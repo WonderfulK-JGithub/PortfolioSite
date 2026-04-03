@@ -2,6 +2,7 @@
 date: '2026-02-16T10:52:19+01:00'
 tags: ["gameproject","tool","unity"]
 image: images/Frogment_Thumbnail.png
+video: images/Frogment_Video.mp4
 title: 'Frogment'
 subtitle: "A mobile game made in Unity in 6 weeks with a team of 15. I mainly worked on player pathfinding."
 github: https://github.com/WonderfulK-JGithub/Frogment
@@ -17,7 +18,7 @@ My Contributions:
 - **Player Pathfinding**
 
 
-This was my second game project at The Game Assembly, also in 5 weeks in Unity (Version 2022.3). This was a puzzle game made for Android where you play as a frog character. You automatically move to a block by tapping on it, and there are puzzles to solve by pressing buttons or rotating blocks.
+This was my second game project at The Game Assembly, also in 5 weeks in Unity. This was a puzzle game made for Android where you play as a frog character. You automatically move to a block by tapping on it, and there are puzzles to solve by pressing buttons or rotating blocks.
 
 ## Node connections 
 

@@ -7,7 +7,15 @@
       </h2>
     </div>
 
-    {{ if .Params.image }}
+    {{ if .Params.video }}
+    <figure class="video">
+      <div class="thumbnail-video">
+        <video controls="false" muted="true" preload="true" autoplay="true" loop="true" playsinline="true">
+          <source src="{{ .Params.video }}">
+        </video>
+      </div>
+    </figure>
+    {{ else if .Params.image }}
     <!-- <p class="post-list-subtitle">{{ .Params.subtitle }}</p> -->
     <a href="{{ .Permalink }}">
     <img src= "{{ .Params.image }}" , alt="Karl-Johan Dev" class="posts-list-image">
