@@ -1,6 +1,6 @@
 ---
 
-tags: ["tool","ui","c++","custom engine"]
+tags: ["tool","c++","custom engine"]
 image: images/UI_Animated_Thumbnail.gif
 date: '2025-02-16T10:52:19+01:00'
 title: 'UI Editor'

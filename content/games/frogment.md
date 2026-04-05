@@ -1,10 +1,10 @@
 ---
 date: '2026-02-16T10:52:19+01:00'
-tags: ["gameproject","tool","unity"]
+tags: ["tool","unity","c#"]
 image: images/Frogment_Thumbnail.png
 video: images/Frogment_Video.mp4
 title: 'Frogment'
-subtitle: "A mobile game made in Unity in 6 weeks with a team of 15. I mainly worked on player pathfinding."
+subtitle: "A mobile game made in Unity in 6 weeks with a team of 15. I mainly worked on player pathfinding and node system."
 github: https://github.com/WonderfulK-JGithub/Frogment
 #hideThumbnail: true
 ---

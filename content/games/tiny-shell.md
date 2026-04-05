@@ -1,7 +1,7 @@
 ---
 #date: '2026-02-16T10:52:19+01:00'
 date: '2024-02-16T10:52:19+01:00'
-tags: ["gameproject","unity"]
+tags: ["unity","c#"]
 video: images/TSRS_Video.mp4
 image: images/TSRS_Thumbnail2.png
 title: 'Tiny Shell Rough Sea'

@@ -89,7 +89,10 @@ border-radius: 1rem;
     .chroma {
     max-height: 500px !important;
     font-size: 0.7rem !important;
-}
+    }
+    .post-list-subtitle {
+        font-size: 0.8rem!important;
+    }
 }
 
 .correct-image {
@@ -1369,7 +1372,7 @@ nav {
 }
 
 .post-list-subtitle {
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 .post-subtitle {
@@ -1393,7 +1396,7 @@ nav {
     color: white;
     padding: 0.3rem 0.4rem;
     border-radius: 20px;
-    font-size: 0.55rem;
+    font-size: 0.7rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.5px;
