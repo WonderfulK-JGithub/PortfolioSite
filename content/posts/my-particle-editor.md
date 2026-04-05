@@ -891,3 +891,48 @@ Noise will pseudo-randomly offset the particle depending on its position. Streng
 
 ![Particle noise gif](../../images/Particle_Noise.gif "Particle noise gif")
 
+## Future Improvements
+
+The particle system has a lot of features, but I have also noticed that it has performance drops when handling 50k+ particles in a scene with other things to render. There are a few ways I could improve performance. One way is to separate the particle data into multiple smaller structs. Currently my particle struct is very big:
+
+```cpp
+struct Particle
+{
+	Tga::Color startColor;
+
+	float startLifeTime{};
+	float lifeTimer{};
+
+	float startSpeed{};
+	float currentSpeed{};
+
+	float startSize{};
+	float currentSize{};
+
+	float rotation{};
+	float startSpin{};
+	float currentSpin{};
+
+	float rotationX{};
+	float startSpinX{};
+	float currentSpinX{};
+
+	float rotationY{};
+	float startSpinY{};
+	float currentSpinY{};
+
+	Tga::Vector3f direction;
+	Tga::Vector3f position;
+	Tga::Vector3f gravityVelocity;
+
+	Tga::Vector3f targetNoiseVelocity;
+	Tga::Vector3f noiseVelocity;
+	float noiseTime{};
+
+	Tga::Vector2f uvPosition;
+};
+```
+
+When I loop through all the particles just to check lifetime, this will not be cache friendly since variables that are nearby will be loaded in memory but not used.
+
+Another improved to performance I could do is updating particles using a compute shader, which would be much faster than the current CPU approach. This is something I definitely want to do in the future, however I have prioritised adding features instead since the particle system isn't one of our biggest bottle neck to performance in our games.

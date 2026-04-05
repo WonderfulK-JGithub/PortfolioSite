@@ -122,7 +122,7 @@ else
 }
 ```
 
-I also use this progress value to 
+I also use this progress value in the planets sprite shader for the progress effect.
 
 ```cs
 float materialValue = Mathf.Clamp01(Mathf.Max(myPlayerProgress / 360f, myProgressRevertTimer));
