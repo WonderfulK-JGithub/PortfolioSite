@@ -22,6 +22,19 @@ border-radius: 1rem;
   display: none !important;
 }
 
+.tocGit {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-card);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px var(--shadow-color);
+    border: 1px solid var(--border-color);
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+    padding: 0.67rem;
+}
+
 .embargo {
     color: var(--text-secondary);
     display: flex;

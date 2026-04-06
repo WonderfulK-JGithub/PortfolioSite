@@ -2,6 +2,7 @@
 
 tags: ["tool","c++","custom engine"]
 image: images/UI_Animated_Thumbnail.gif
+video: images/UI_Video.mp4
 date: '2025-02-16T10:52:19+01:00'
 title: 'UI Editor'
 subtitle: "a UI editor made in custom engine"

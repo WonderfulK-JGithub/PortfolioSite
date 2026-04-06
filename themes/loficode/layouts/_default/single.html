@@ -17,28 +17,8 @@
         <article class="post-content">
             <header class="post-header">
                 <div class="post-meta">
-                    <!-- <span class="post-date">{{ .Date.Format "2006.01.02" }}</span>
-                    <div class="reading-time-post">
-                        <span class="coffee-cups">
-                            {{ $coffees := "" }}
-                            {{ $maxCups := 5 }}
-                            {{ $cupsToShow := .ReadingTime }}
-                            {{ if gt .ReadingTime $maxCups }}
-                                {{ $cupsToShow = $maxCups }}
-                            {{ end }}
-                            {{ range (seq $cupsToShow) }}
-                                {{ $coffees = print $coffees "☕" }}
-                            {{ end }}
-                            {{ $coffees }}
-                        </span>
-                        <span>{{ .ReadingTime }} min read</span>
-                    </div> -->
                 </div>
                 <h1 class="post-title">{{ .Title }}</h1>
-                <!-- {{ if .Params.subtitle }}
-                <p class="post-subtitle">{{ .Params.subtitle }}</p>
-                {{ end }} -->
-
                 {{ if .Params.tags }}
                 <div class="post-tags-header">
                     {{ range .Params.tags }}
@@ -73,15 +53,6 @@
                     {{ range . }}
                     <div class="related-post">
                         <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                        <!-- <div class="related-meta">
-                            {{ .Date.Format "2006.01.02" }} •
-                            {{ $coffees := "" }}
-                            {{ $maxCups := 5 }}
-                            {{ $cupsToShow := .ReadingTime }}
-                            {{ if gt .ReadingTime $maxCups }}{{ $cupsToShow = $maxCups }}{{ end }}
-                            {{ range (seq $cupsToShow) }}{{ $coffees = print $coffees "☕" }}{{ end }}
-                            {{ $coffees }} {{ .ReadingTime }} min read
-                        </div> -->
                     </div>
                     {{ end }}
                 </div>
@@ -130,12 +101,13 @@
                
             </nav>
             {{ if .Params.github }}
-            <div class="github-repo">
-                <div class="nav-links">
-                    <a href="{{ .Params.github }}" ><p class="nav-link">Github Repository</p></a>
+            <nav class="tocGit">
+                <div class="github-repo">
+                    <div class="nav-links">
+                        <a href="{{ .Params.github }}" ><p class="nav-link">Github Repository</p></a>
+                    </div>
                 </div>
-            </div>
-            
+            </nav>
             
             {{ end }}
         </aside>

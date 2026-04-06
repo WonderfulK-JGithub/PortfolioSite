@@ -2,6 +2,7 @@
 
 tags: ["tool","c++","custom engine"]
 image: images/Terrain_Animated_Thumbnail.gif
+video: images/Terrain_Video.mp4
 date: '2026-02-16T10:52:19+01:00'
 title: 'Terrain Editor'
 subtitle: "3D Terrain Editor using marching cubes algorithm"
@@ -215,7 +216,11 @@ I then moved on to making more complex tools, starting off with a ramp tool. The
 
 ![](../../images/Terrain_Ramp.gif "ramp")
 
-From the ramp tool I reused the point selection functionality to make a new tool. This one removes terrain between the points, creating a tunnel
+I struggled alot with this one. My biggest issue now is that the sides on the ramp get distorted-like when the ramp is not aligned with the world grid. I have tried to fix it but with no success, so I have left it for the future. You can still use the smooth tools to fix the ramp so it's not the end of the world.
+
+![](../../images/Terrain_RampError.png "ramp error")
+
+I reused the point selection functionality from the ramp tool to make a new tool. This one removes terrain between the points, creating a tunnel. Fortunately this one has no issues with not being aligned with the world grid.
 
 ![](../../images/Terrain_Tunnel.gif "tunnel")
 
