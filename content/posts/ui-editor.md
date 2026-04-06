@@ -5,7 +5,7 @@ image: images/UI_Animated_Thumbnail.gif
 video: images/UI_Video.mp4
 date: '2025-02-16T10:52:19+01:00'
 title: 'UI Editor'
-subtitle: "a UI editor made in custom engine"
+subtitle: "A UI editor made in custom game engine, giving my team's graphic designers full control over UI elements."
 github: https://github.com/WonderfulK-JGithub/UI-Editor
 ---
 
