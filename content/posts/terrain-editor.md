@@ -5,7 +5,7 @@ image: images/Terrain_Animated_Thumbnail.gif
 video: images/Terrain_Video.mp4
 date: '2026-02-16T10:52:19+01:00'
 title: 'Terrain Editor'
-subtitle: "3D Terrain Editor using marching cubes algorithm"
+subtitle: "3D Terrain Editor using marching cubes algorithm, implemented in custom game engine."
 github: https://github.com/WonderfulK-JGithub/Terrain-Editor
 ---
 

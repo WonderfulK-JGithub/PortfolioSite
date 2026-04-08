@@ -5,7 +5,7 @@ image: images/Particle_Animated_Thumbnail.gif
 video: images/Particle_Video.mp4
 date: '2024-02-16T10:52:19+01:00'
 title: 'Particle System Editor'
-subtitle: "A particle system editor made from the ground up in custom engine"
+subtitle: "A particle system editor made in custom game engine, for my team's vfx artists"
 github: https://github.com/WonderfulK-JGithub/Particle-Editor
 ---
 
