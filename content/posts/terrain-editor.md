@@ -1,6 +1,6 @@
 ---
 
-tags: ["tool","c++","custom engine"]
+tags: ["tool","c++","custom engine","Dear ImGui"]
 image: images/Terrain_Animated_Thumbnail.gif
 video: images/Terrain_Video.mp4
 date: '2026-02-16T10:52:19+01:00'
