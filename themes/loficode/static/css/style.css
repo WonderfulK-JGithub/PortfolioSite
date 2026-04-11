@@ -136,6 +136,7 @@ border-radius: 1rem;
         padding-bottom: 5%;
         padding-left: 5%; */
         margin-bottom: 2rem;
+        padding-top: 1rem !important;
     }
     .nav-links {
         gap: 0rem !important;
@@ -153,6 +154,29 @@ border-radius: 1rem;
     .embargo {
         font-size: 0.65rem !important;
       }
+
+    .post-tag{
+    font-size: 0.6rem !important;
+    }
+
+    .post-list-subtitle
+    {
+        font-size: 0.7rem !important;
+    }
+
+    .post-content
+    {
+        max-width: 100% !important;
+    }
+    .post-content img
+    {
+        max-width: 100% !important;
+    }
+
+    .post-body p
+    {
+        font-size: 0.85rem !important;
+    }
 }
 
 .padding-class{
@@ -264,12 +288,6 @@ border-radius: 1rem;
 .post-content {
     width: 100%!important;
     }
-
-@media (max-width: 1000px) {
-    .post-item {
-        width: 80%!important;
-    }
-}
 
 /* .posts-image {
    width: 80px!important;
