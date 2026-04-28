@@ -5,7 +5,7 @@ title: "About & Contact"
 
 ## About Me
 
-My name is K-J, short for Karl-Johan. I am a game programmer with experience in making games with **c# in Untiy** and **c++**, currently studying at **The Game Assembly** and seeking an internship.
+My name is K-J, short for Karl-Johan. I am a game programmer with experience in making games with **c# in Untiy** and **c++**, currently studying at **The Game Assembly**.
 
 When I got into game development as an experimental hobby as a teenager, it quickly became an engaging experience. When making games, seeing how a game develops piece by piece felt like a behind-the-scenes look at how games were made. **I always looked forward to** watching my friends play the small games I would make.
 
